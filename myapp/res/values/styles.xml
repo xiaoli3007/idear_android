@@ -1,0 +1,15 @@
+<resources>
+
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+
+    <!--标题-->
+    <style name="A0_Font">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:textColor">@color/top_title_text</item>
+        <item name="android:shadowRadius">0.2</item>
+    </style>
+
+</resources>

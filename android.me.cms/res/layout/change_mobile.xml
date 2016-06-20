@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/change_mobile_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_normal" >
+
+    <ScrollView
+        android:id="@id/change_mobile_main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/change_mobile_title_layout" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <LinearLayout
+                android:id="@id/change_mobile_form_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_marginTop="20.0dip"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@color/line_normal" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15.0dip"
+                        android:text="@string/change_mobile_mobile_text"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@id/change_mobile_mobile_input"
+                        android:layout_width="fill_parent"
+                        android:layout_height="44.0dip"
+                        android:background="#00000000"
+                        android:hint="@string/change_mobile_mobile_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="50"
+                        android:paddingRight="15.0dip"
+                        android:singleLine="true"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@color/line_normal" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@id/change_mobile_verfycode_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15.0dip"
+                        android:text="@string/change_mobile_verfycode_text"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@id/change_mobile_verfycode_input"
+                        android:layout_width="fill_parent"
+                        android:layout_height="44.0dip"
+                        android:layout_toLeftOf="@id/change_mobile_send_verfycode_button"
+                        android:layout_toRightOf="@id/change_mobile_verfycode_text"
+                        android:background="#00000000"
+                        android:hint="@string/change_mobile_verfycode_hint"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="50"
+                        android:paddingRight="15.0dip"
+                        android:singleLine="true"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="16.0sp" />
+
+                    <Button
+                        android:id="@id/change_mobile_send_verfycode_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000"
+                        android:paddingRight="20.0dip"
+                        android:text="@string/send_verfycode"
+                        android:textColor="@drawable/button_disable_text_color"
+                        android:textSize="18.0sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@color/line_normal" />
+
+                <Button
+                    android:id="@id/change_mobile_next_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44.0dip"
+                    android:layout_margin="20.0dip"
+                    android:background="@drawable/button_normal"
+                    android:text="@string/next"
+                    android:textColor="#ffffffff"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/change_mobile_new_mobile_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_marginTop="20.0dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@color/line_normal" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15.0dip"
+                        android:text="@string/change_mobile_mobile_text"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@id/change_mobile_new_mobile_input"
+                        android:layout_width="fill_parent"
+                        android:layout_height="44.0dip"
+                        android:background="#00000000"
+                        android:hint="@string/change_mobile_new_mobile_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="50"
+                        android:paddingRight="15.0dip"
+                        android:singleLine="true"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@color/line_normal" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@id/change_mobile_new_verfycode_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15.0dip"
+                        android:text="@string/change_mobile_verfycode_text"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@id/change_mobile_new_verfycode_input"
+                        android:layout_width="fill_parent"
+                        android:layout_height="44.0dip"
+                        android:layout_toLeftOf="@id/change_mobile_send_new_verfycode_button"
+                        android:layout_toRightOf="@id/change_mobile_new_verfycode_text"
+                        android:background="#00000000"
+                        android:hint="@string/change_mobile_verfycode_hint"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="50"
+                        android:paddingRight="15.0dip"
+                        android:singleLine="true"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="16.0sp" />
+
+                    <Button
+                        android:id="@id/change_mobile_send_new_verfycode_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000"
+                        android:paddingRight="20.0dip"
+                        android:text="@string/send_verfycode"
+                        android:textColor="@drawable/button_disable_text_color"
+                        android:textSize="18.0sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@color/line_normal" />
+
+                <Button
+                    android:id="@id/change_mobile_submit_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44.0dip"
+                    android:layout_margin="20.0dip"
+                    android:background="@drawable/button_normal"
+                    android:text="@string/change_mobile_button_submit"
+                    android:textColor="#ffffffff"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/change_mobile_success_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="20.0dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/change_mobile_failure_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="20.0dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@id/loading"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_below="@id/change_mobile_title_layout"
+        android:background="#cc333333"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@id/progress_bar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:layout_centerVertical="true"
+            android:indeterminate="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/progress_bar"
+            android:text="@string/loading"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/change_mobile_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:background="@color/background_navbar" >
+
+        <TextView
+            android:id="@id/change_mobile_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/change_mobile_title_text"
+            android:textColor="@color/text_title"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@id/change_mobile_title_back_button"
+            android:layout_width="40.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/button_back"
+            android:paddingLeft="10.0dip"
+            android:text="" />
+    </RelativeLayout>
+
+</RelativeLayout>

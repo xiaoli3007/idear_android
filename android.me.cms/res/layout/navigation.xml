@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff" >
+
+    <FrameLayout
+        android:id="@id/tab_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/tab_bars" />
+
+    <RadioGroup
+        android:id="@id/tab_bars"
+        android:layout_width="fill_parent"
+        android:layout_height="49.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tab_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@id/tab_bar_home"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_home"
+            android:gravity="center"
+            android:text="@string/tab_home"
+            android:textColor="@drawable/tab_text_color"
+            android:textSize="12.0sp" />
+
+        <RadioButton
+            android:id="@id/tab_bar_discover"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_discover"
+            android:gravity="center"
+            android:text="@string/tab_discover"
+            android:textColor="@drawable/tab_text_color"
+            android:textSize="12.0sp" />
+
+        <RadioButton
+            android:id="@id/tab_bar_calendar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_calendar"
+            android:gravity="center"
+            android:text="@string/tab_calendar"
+            android:textColor="@drawable/tab_text_color"
+            android:textSize="12.0sp" />
+
+        <RadioButton
+            android:id="@id/tab_bar_my"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_my"
+            android:gravity="center"
+            android:text="@string/tab_my"
+            android:textColor="@drawable/tab_text_color"
+            android:textSize="12.0sp" />
+    </RadioGroup>
+
+</RelativeLayout>

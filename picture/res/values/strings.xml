@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">picture</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">PictureActivity</string>
+    <string name="title_bar_txt">个人信息</string>
+
+</resources>

@@ -1,0 +1,14 @@
+
+body{ }
+.list_menu div{ margin-bottom:10px; text-align: center; min-height: 30px; line-height: 30px; }
+.list_menu a{ font-size: 0.85em;}
+.list_menu div a{ display:block;  border-radius:5px; }
+.list_menu div.active a{  background:#478a61; color: #fff; }
+
+
+.list_menu h3{ text-indent: 10px;font-size: 1.2em;}
+.list_info{ background: #f5f5f5; height: 100%; border-top: 1px solid #ccc; padding: 10px 0; }
+
+.list_info img{ max-width: 100%;}
+.list_info h3{font-size: 0.9em; margin-top: 0px;}
+.list_info  p{font-size: 0.85em;}
