@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_highlight">#fff6f7f7</color>
+    <color name="background_normal">#fff2f1f1</color>
+    <color name="background_navbar">#ffefeacd</color>
+    <color name="text_red">#ffff0000</color>
+    <color name="text_blue">#ff0b7dde</color>
+    <color name="text_title">#ffdca359</color>
+    <color name="text_hint">#ffd1d0d0</color>
+    <color name="text_normal">#ff363636</color>
+    <color name="text_gray">#ff9f9f9f</color>
+    <color name="line_normal">#ffd9d9d9</color>
+    <color name="line_highlight">#ffe1e1e1</color>
+    <color name="button_highlight">#ffe08708</color>
+    <color name="button_normal">#ffdca359</color>
+    <color name="button_gray">#ffd1d1d3</color>
+    <color name="button_highlight_gray">#ffefefef</color>
+
+</resources>

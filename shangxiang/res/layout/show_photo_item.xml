@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/show_simiao_image"
+        android:layout_width="fill_parent"
+		android:layout_height="60.0dip"
+		android:layout_gravity="center_vertical"
+		android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+</RelativeLayout>

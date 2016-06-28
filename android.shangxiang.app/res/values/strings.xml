@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="desc"></string>
+	<string name="app_name">上香网</string>
+	<string name="ok">确定</string>
+	<string name="submit">提交</string>
+	<string name="truesubmit">确认提交</string>
+	<string name="cancel">取消</string>
+	<string name="back">返回</string>
+	<string name="next">下一步</string>
+	<string name="refresh">刷新</string>
+	<string name="settings">设置</string>
+	<string name="delete">删除</string>
+	<string name="edit">编辑</string>
+	<string name="save">保存</string>
+	<string name="loading">正在加载……</string>
+	<string name="forget_password">忘记密码</string>
+	<string name="logout">退出登录</string>
+	<string name="user_agreement">用户协议</string>
+	<string name="verfycode_hint">验证码</string>
+	<string name="send_verfycode">获取验证码</string>
+	<string name="resend_verfycode">秒后重新发送</string>
+	<string name="status_processing">祈福中</string>
+	<string name="status_finish">已完成</string>
+	<string name="blessit">加持</string>
+	<string name="pay">支付</string>
+	<string name="shareto">分享</string>
+	<string name="today">今</string>
+	<string name="sex_male">男</string>
+	<string name="sex_female">女</string>
+	<string name="other_login">第三方登陆</string>
+	<string name="shareto_some">[随喜转发] 功德无量</string>
+	<string name="other_login_wechat">微信</string>
+	<string name="other_login_weibo">新浪微博</string>
+	
+	<string name="week_1">一</string>
+	<string name="week_2">二</string>
+	<string name="week_3">三</string>
+	<string name="week_4">四</string>
+	<string name="week_5">五</string>
+	<string name="week_6">六</string>
+	<string name="week_7">日</string>
+	
+	<string name="desire_1">财富</string>
+	<string name="desire_2">健康</string>
+	<string name="desire_3">求子</string>
+	<string name="desire_4">平安</string>
+	<string name="desire_5">学业</string>
+	<string name="desire_6">姻缘</string>
+	<string name="desire_7">事业</string>
+	
+	<string name="temp1">柏林禅寺</string>
+	<string name="temp5">玄奘法师</string>
+	<string name="temp7">齐天大圣</string>
+	<string name="temp8">广东 - 广州</string>
+	<string name="temp9">清香</string>
+	<string name="temp10">2015/12/12</string>
+	<string name="temp11">13456785678</string>
+	<string name="temp12">财富</string>
+	<string name="temp13">信众 陈晓明 所求愿望已成，特此答谢还愿</string>
+	<string name="temp14">订单号：000000018</string>
+	<string name="temp15">李瑞环 祈求平安</string>
+	<string name="temp151">李瑞环 还愿</string>
+	<string name="temp16">寺庙：</string>
+	<string name="temp17">法师：</string>
+	<string name="temp18">香烛：</string>
+	<string name="temp181">开光香 ￥99</string>
+	<string name="temp19">时间：</string>
+	<string name="temp191">2014&#8211;12&#8211;31</string>
+	<string name="temp20">祈求内容：</string>
+	<string name="temp201">祝福世界和平</string>
+	<string name="temp21">还愿内容：</string>
+	<string name="temp211">感谢菩萨</string>
+	<string name="temp30">全部道场</string>
+	<string name="temp31">五台山清凉寺</string>
+	<string name="temp32">九华山净土寺</string>
+	<string name="temp33">普陀山法门寺</string>
+	<string name="temp22">广州市 刘晓雅 请一凡居士与普陀山祈求财富 1月前已达成心愿！</string>
+	<string name="temp24">分享内容：</string>
+	<string name="temp25">普陀山求愿股票升值，日进斗金</string>
+	<string name="temp26">2015年01月</string>
+	<string name="temp27">15</string>
+	<string name="temp28">2014年6月15日 星期日</string>
+	<string name="temp29">农历四月十七</string>
+	<string name="temp40">释伽牟尼诞辰纪念日</string>
+	<string name="temp41">李鸿章的生日 11:00</string>
+	<string name="temp42">提前一天</string>
+	
+	<string name="tab_home">求愿</string>
+	<string name="tab_discover">发现</string>
+	<string name="tab_calendar">佛历</string>
+	<string name="tab_my">我的</string>
+
+	<string name="login_title_text">登录</string>
+	<string name="login_mobile_text">账号：</string>
+	<string name="login_mobile_hint">请输入手机号</string>
+	<string name="login_password_text">密码：</string>
+	<string name="login_password_hint">请输入密码</string>
+	<string name="login_button_forget_password">忘记密码？</string>
+	<string name="login_button_register">注册</string>
+	<string name="login_button_submit">登录</string>
+	<string name="login_register_label">还没有账号？现在去注册</string>
+
+	<string name="register_title_text">用户注册</string>
+	<string name="register_mobile_text">账号：</string>
+	<string name="register_mobile_hint">请输入手机号</string>
+	<string name="register_password_text">密码：</string>
+	<string name="register_password_hint">请输入密码</string>
+	<string name="register_button_submit">立即注册</string>
+	<string name="register_button_login">登陆</string>
+	<string name="register_login_label">已有账号？去登录</string>
+
+	<string name="forget_password_title_text">密码重置</string>
+	<string name="forget_password_mobile_text">请输入申请账号时的手机号码</string>
+	<string name="forget_password_mobile_hint">请输入手机号</string>
+	<string name="forget_password_verfycode_text">验证码已发送至</string>
+	<string name="forget_password_verfycode_hint">请输入验证码</string>
+	<string name="forget_password_send_verfycode_button">重新发送？</string>
+	<string name="forget_password_new_password_text">输入您的新密码</string>
+	<string name="forget_password_new_password_hint">输入密码</string>
+	<string name="forget_password_password_desc_hint">密码为6~50个字符，且区分大小</string>
+	<string name="forget_password_button_submit">重置密码</string>
+	
+	<string name="home_title_text">买金网——您的金库管家</string>
+	<string name="home_dock_more_text">更多</string>
+	<string name="home_main_title3_text">余金宝本期</string>
+	<string name="home_main_title4_text">黄金直购通道</string>
+	<string name="home_main_title5_text">延期一年交付</string>
+	<string name="home_main_title6_text">最低购买克数</string>
+	<string name="home_main_title7_text">距离本场结束还有：</string>
+
+	<string name="list_temple_title_text">委托求愿</string>
+	
+	<string name="list_temple_listitem_create_order_button">填订单</string>
+
+	<string name="show_temple_title_text"></string>
+	<string name="show_temple_switch_hall_text">寺庙介绍</string>
+	<string name="show_temple_switch_buddhist_text">法师介绍</string>
+	<string name="show_temple_create_order_button">在此求愿</string>
+
+	<string name="create_order_title_text">填写订单</string>
+	<string name="create_order_content_desire_title_text">填写内容</string>
+	<string name="create_order_content_select_text">精选</string>
+	<string name="create_order_content_hint_text">请输入求愿内容（建议100字以内）</string>
+	<string name="create_order_content_hint2_text">请输入还愿内容（建议100字以内）</string>
+	<string name="create_order_other_desirer_text">求愿人</string>
+	<string name="create_order_other_mobile_text">手机</string>
+	<string name="create_order_other_region_text">我的位置</string>
+	<string name="create_order_other_JSC_text">香烛类型</string>
+	<string name="create_order_other_date_text">预约日期</string>
+
+	<string name="paid_order_title_text">支付成功</string>
+	<string name="paid_order_show_detail_text">查看订单</string>
+	<string name="paid_order_shareto_circle_text">分享到朋友圈</string>
+	<string name="paid_order_shareto_friend_text">分享给微信好友</string>
+	<string name="paid_order_shareto_weibo_text">分享到微博</string>
+
+	<string name="discover_title_text">全部道场</string>
+
+	<string name="show_discover_title_text">查看祈福</string>
+	<string name="show_discover_create_order_button">同愿祈福</string>
+	
+	<string name="calendar_create_event_button">添加亲友生日</string>
+
+	<string name="show_event_title_text">详情</string>
+	<string name="show_event_desire_button">求愿</string>
+
+	<string name="create_event_title_text">生日</string>
+	<string name="create_event_event_title_text">标题：</string>
+	<string name="create_event_event_title_hint">请添加亲友姓名</string>
+	<string name="create_event_date_text">生日：</string>
+	<string name="create_event_date_hint">请选择亲友生日日期</string>
+	<string name="create_event_remind_text">提醒：</string>
+	<string name="create_event_remind_hint">提前1天</string>
+	<string name="create_event_gregorian_date_button">公历</string>
+	<string name="create_event_lunar_date_button">农历</string>
+
+	<string name="my_title_text">我的</string>
+	<string name="my_user_need_login">请登录</string>
+	<string name="my_user_discover_total_toother_button">我的加持</string>
+	<string name="my_user_discover_total_tome_button">为我加持</string>
+	<string name="my_menu_order_record_text">订单查询</string>
+	<string name="my_menu_notice_text">系统通知</string>
+	<string name="my_menu_settings_text">设置</string>
+	<string name="my_menu_feedback_text">意见反馈</string>
+	<string name="my_menu_about_text">关于我们</string>
+
+	<string name="my_info_title_text">账户资料</string>
+	<string name="my_info_menu_head_hint">修改头像</string>
+	<string name="my_info_menu_mobile_text">账号</string>
+	<string name="my_info_menu_reset_password_text">修改密码</string>
+	<string name="my_info_menu_realname_text">姓名</string>
+	<string name="my_info_menu_region_text">地区</string>
+	<string name="my_info_menu_sex_text">性别</string>
+	<string name="my_info_select_avatar_title_text">修改头像</string>
+	<string name="my_info_select_avatar_carema_button">拍照</string>
+	<string name="my_info_select_avatar_thumb_button">从相册中选择</string>
+	<string name="my_info_select_avatar_show_button">查看大图</string>
+
+	<string name="clip_image_title_text">编辑头像</string>
+
+	<string name="change_mobile_title_text">更改账号</string>
+	<string name="change_mobile_mobile_text">账号：</string>
+	<string name="change_mobile_mobile_hint">请输入当前手机号</string>
+	<string name="change_mobile_verfycode_text">验证码：</string>
+	<string name="change_mobile_verfycode_hint">请输入验证码</string>
+	<string name="change_mobile_new_mobile_hint">输入新手机号</string>
+	<string name="change_mobile_button_submit">确认更改账号</string>
+
+	<string name="reset_password_title_text">修改密码</string>
+	<string name="reset_password_mobile_text">账号：</string>
+	<string name="reset_password_mobile_hint">请输入手机号</string>
+	<string name="reset_password_verfycode_text">验证码：</string>
+	<string name="reset_password_verfycode_hint">请输入验证码</string>
+	<string name="reset_password_new_password_text">密码：</string>
+	<string name="reset_password_new_password_hint">输入新密码</string>
+	<string name="reset_password_renew_password_text">确认密码：</string>
+	<string name="reset_password_renew_password_hint">再次输入新密码</string>
+	<string name="reset_password_submit_button">确认修改密码</string>
+
+	<string name="modify_info_title_text">修改资料</string>
+	<string name="modify_info_realname_text">姓名：</string>
+	<string name="modify_info_realname_hint">请输入真实姓名</string>
+	<string name="modify_info_region_text">地区：</string>
+	<string name="modify_info_region_hint">请选择地区</string>
+	<string name="modify_info_sex_text">性别：</string>
+	<string name="modify_info_sex_hint">请选择性别</string>
+	<string name="modify_info_submit_button">确认修改资料</string>
+	<string name="modify_info_sex_select_title_text">性别</string>
+
+	<string name="my_discover_title_text">求愿与加持</string>
+	<string name="my_discover_switch_toother_text">我的加持</string>
+	<string name="my_discover_switch_tome_text">为我加持</string>
+              
+	<string name="order_record_title_text">我的订单</string>
+	<string name="order_record_switch_desire_text">求愿单</string>
+	<string name="order_record_switch_redeem_text">还愿单</string>
+
+	<string name="show_order_record_title_text">订单详情</string>
+	<string name="show_order_record_action_title_text">代上香祈福记录</string>
+	<string name="show_order_create_redeem_order_button">还愿</string>
+
+	<string name="notice_title_text">系统通知</string>
+
+	<string name="show_notice_title_text">通知详情</string>
+
+	<string name="settings_title_text">设置</string>
+	<string name="settings_menu_show_push_text">佛历提醒</string>
+	<string name="settings_menu_obtain_region_text">获取当前地理位置</string>
+
+	<string name="feedback_title_text">意见反馈</string>
+	<string name="feedback_content_hint">请输入您的反馈意见（建议500字）</string>
+
+	<string name="about_title_text">关于我们</string>
+
+	<string name="user_agreement_title_text">用户协议</string>
+
+	<string name="pick_photo_title_text">照片</string>
+	<string name="pick_photo_folder_pathname_text">所有照片</string>
+	<string name="pick_photo_folder_total_text">0张</string>
+	
+	<string name="update_ticker_title">开始下载更新</string>
+	<string name="update_notification_ready">准备下载更新</string>
+	<string name="update_notification_downloading">正在下载更新</string>
+	<string name="update_notification_download_success">更新下载完成，点击安装</string>
+	<string name="update_notification_download_error">更新下载失败，请重试</string>
+	
+	<string name="dialog_tip">提示</string>
+	<string name="dialog_normal_title">友情提示</string>
+	<string name="dialog_download_update">上香网有新版本需要更新，是否现在去更新？</string>
+	<string name="dialog_newest">您的上香网已经是最新版本！</string>
+	<string name="dialog_feedback_tip">意见反馈</string>
+	<string name="dialog_feedback_toshort">我们希望您的反馈意见能多写些内容，建议最少20个字</string>
+	<string name="dialog_feedback_success">谢谢您提交的反馈意见，我们会认真读取您的意见！</string>
+	<string name="dialog_feedback_err">意见提交失败</string>
+	<string name="dialog_no_suitprog">未安装打开此文件的程序，请安装相应程序后重试</string>
+	<string name="dialog_system_error_title">系统错误</string>
+	<string name="dialog_system_error_content">未知错误，请稍候再试</string>
+	<string name="dialog_network_err_title">网络错误</string>
+	<string name="dialog_submiting_content">请求提交中，请稍候</string>
+	<string name="dialog_request_result_success">请求成功</string>
+	<string name="dialog_request_result_err">请求出错</string>
+	<string name="dialog_form_check_title">表单检查</string>
+	<string name="dialog_form_check_err_mobile">请输入正确的手机号码</string>
+	<string name="dialog_form_check_err_password">密码错误</string>
+	<string name="dialog_form_check_err_new_password">请输入6~50位密码</string>
+	<string name="dialog_form_check_err_renew_password">两次输入的密码不一致</string>
+	<string name="dialog_form_check_err_email">请填写正确的邮箱地址</string>
+	<string name="dialog_form_check_err_verfycode">请填写正确的验证码</string>
+	<string name="dialog_form_check_err_create_order_desire_content">请填写求愿内容，建议100字以内</string>
+	<string name="dialog_form_check_err_create_order_desirer">请填写求愿人</string>
+	<string name="dialog_form_check_err_create_order_mobile">请填写手机号</string>
+	<string name="dialog_form_check_err_create_order_JSC">请选择香型</string>
+	<string name="dialog_form_check_err_create_order_date">预约日期请早于今日</string>
+	<string name="dialog_form_check_err_create_order_region">请选择位置</string>
+	<string name="dialog_form_check_err_create_event_title">请填写标题</string>
+	<string name="dialog_form_check_err_create_event_date">请选择生日</string>
+	<string name="dialog_login_need">需要您登录才能进行</string>
+	<string name="dialog_login_need_wechat">您未安装微信客户端，无法使用微信登陆</string>
+	<string name="dialog_login_result_success">登录成功</string>
+	<string name="dialog_login_result_err">登录失败</string>
+	<string name="dialog_login_result_err_unknow">未知错误</string>
+	<string name="dialog_login_result_err_mobile">手机号或者密码错误</string>
+	<string name="dialog_login_result_err_weibo">使用微博登录失败</string>
+	<string name="dialog_register_result_err">注册失败</string>
+	<string name="dialog_reset_password_tip">密码修改</string>
+	<string name="dialog_reset_password_success">已经成功修改密码，请用新密码登录</string>
+	<string name="dialog_reset_password_other">微信、微博登陆请前往该服务商平台修改</string>
+	<string name="dialog_order_delete_tip">删除订单</string>
+	<string name="dialog_order_delete_success">确定要删除订单吗？</string>
+	<string name="dialog_create_order_success">订单提交成功！请完成支付！</string>
+	<string name="dialog_create_event_success">生日提交成功！</string>
+    <string name="dialog_imageviewer_tip">查看图片</string>
+    <string name="dialog_imageviewer_err">未找到指定的图片</string>
+	<string name="dialog_logout_tip">退出登陆</string>
+	<string name="dialog_logout_content">您确定退出当前帐号吗？</string>
+	<string name="dialog_logout_success">成功退出</string>
+	<string name="dialog_exit_tip">退出</string>
+	<string name="dialog_exit_content">您确定退出吗？</string>
+	<string name="dialog_exit_stopproc">退出时停止文件传输</string>
+
+	<string name="dialog_network_error_timeout">连接超时，请重试</string>
+	<string name="dialog_network_error_getdata">内容获取失败，请重试</string>
+	<string name="dialog_network_check_title">无网络连接</string>
+	<string name="dialog_network_check_content">当前无可用连接，应用将无法正常使用</string>
+	
+	<string name="toast_shareto_success">分享成功！</string>
+	<string name="toast_pay_success">支付成功！</string>
+</resources>

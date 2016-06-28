@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/show_order_record_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_normal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/show_order_record_title_layout"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20.0dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/show_order_record_order_id_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5.0dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@id/show_order_record_order_title_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="5.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/temp16"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@id/show_order_record_order_hall_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/temp17"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@id/show_order_record_order_buddhist_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="5.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/temp18"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@id/show_order_record_order_JSC_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/temp19"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@id/show_order_record_order_date_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80.0dip"
+            android:orientation="horizontal"
+            android:padding="10.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5.0dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/temp20"
+                android:textColor="@color/text_gray"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@id/show_order_record_order_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:text=""
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <LinearLayout
+            android:id="@id/show_order_record_status_pay_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30.0dip"
+                    android:contentDescription="@string/desc"
+                    android:scaleType="center"
+                    android:src="@drawable/pay_alipay" />
+
+                <Button
+                    android:id="@id/show_order_record_pay_alipay_button"
+                    android:layout_width="70.0dip"
+                    android:layout_height="34.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30.0dip"
+                    android:background="@drawable/button_normal"
+                    android:text="@string/pay"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30.0dip"
+                    android:contentDescription="@string/desc"
+                    android:scaleType="center"
+                    android:src="@drawable/pay_wechat" />
+
+                <Button
+                    android:id="@id/show_order_record_pay_wechat_button"
+                    android:layout_width="70.0dip"
+                    android:layout_height="34.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30.0dip"
+                    android:background="@drawable/button_normal"
+                    android:text="@string/pay"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30.0dip"
+                    android:contentDescription="@string/desc"
+                    android:scaleType="center"
+                    android:src="@drawable/pay_unionpay" />
+
+                <Button
+                    android:id="@id/show_order_record_pay_unionpay_button"
+                    android:layout_width="70.0dip"
+                    android:layout_height="34.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30.0dip"
+                    android:background="@drawable/button_normal"
+                    android:text="@string/pay"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30.0dip"
+                    android:contentDescription="@string/desc"
+                    android:scaleType="center"
+                    android:src="@drawable/pay_mobile" />
+
+                <Button
+                    android:id="@id/show_order_record_pay_mobilepay_button"
+                    android:layout_width="70.0dip"
+                    android:layout_height="34.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30.0dip"
+                    android:background="@drawable/button_normal"
+                    android:text="@string/pay"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/show_order_record_status_processing_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10.0dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_order_record_action_title_text"
+                android:textColor="@color/text_title"
+                android:textSize="18.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@id/show_order_record_processing_date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10.0dip"
+                    android:drawableTop="@drawable/icon_receipt"
+                    android:text=""
+                    android:textColor="@color/text_title"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/show_order_record_status_processed_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10.0dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_order_record_action_title_text"
+                android:textColor="@color/text_title"
+                android:textSize="18.0sp" />
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@id/show_order_record_processed_receipt_thumbs_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@id/show_order_record_processed_create_redeem_order_button"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/button_normal"
+                android:text="@string/show_order_create_redeem_order_button"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/loading"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_below="@id/show_order_record_title_layout"
+        android:background="#ff333333"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@id/progress_bar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:layout_centerVertical="true"
+            android:indeterminate="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/progress_bar"
+            android:text="@string/loading"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/show_order_record_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:background="@color/background_navbar" >
+
+        <TextView
+            android:id="@id/show_order_record_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/show_order_record_title_text"
+            android:textColor="@color/text_title"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@id/show_order_record_title_back_button"
+            android:layout_width="40.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/button_back"
+            android:paddingLeft="10.0dip"
+            android:text="" />
+
+        <Button
+            android:id="@id/show_order_record_title_delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/delete"
+            android:textColor="@color/text_title"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

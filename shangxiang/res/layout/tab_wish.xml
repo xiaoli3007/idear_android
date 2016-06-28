@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff6f4e2" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitStart"
+        android:src="@drawable/background_home" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitEnd"
+            android:src="@drawable/buddha" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/home_desire_bottom" >
+
+            <ImageButton
+                android:id="@id/home_desire_0_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/home_desire_0"
+                android:background="#00000000"
+                android:src="@drawable/button_desire_0" />
+
+            <ImageButton
+                android:id="@id/home_desire_6_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/home_desire_6"
+                android:background="#00000000"
+                android:src="@drawable/button_desire_6" />
+
+            <ImageButton
+                android:id="@id/home_desire_1_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/home_desire_1"
+                android:background="#00000000"
+                android:src="@drawable/button_desire_1" />
+
+            <ImageButton
+                android:id="@id/home_desire_5_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/home_desire_5"
+                android:background="#00000000"
+                android:src="@drawable/button_desire_5" />
+
+            <ImageButton
+                android:id="@id/home_desire_2_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/home_desire_2"
+                android:background="#00000000"
+                android:src="@drawable/button_desire_2" />
+
+            <ImageButton
+                android:id="@id/home_desire_4_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/home_desire_4"
+                android:background="#00000000"
+                android:src="@drawable/button_desire_4" />
+
+            <ImageButton
+                android:id="@id/home_desire_3_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#00000000"
+                android:src="@drawable/button_desire_3" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       
+        android:scaleType="fitEnd"
+        android:src="@drawable/hall" />
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.wyj.Activity"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/line_normal" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dip"
+        android:background="@color/background_normal"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:id="@+id/addbirthday_select_yin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5.0dip"
+                
+                android:text="阴历"
+                android:textSize="16.0sp" />
+
+            <View
+                android:id="@+id/addbirthday_select_yin_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:background="@color/text_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addbirthday_select_yang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/addbirthday_select_yin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5.0dip"
+                android:text="阳历"
+                android:textSize="16.0sp" />
+
+            <View
+                android:id="@+id/addbirthday_select_yang_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:visibility="gone"
+                android:background="@color/text_title" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addbirthday_date_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:paddingRight="10.0dip"
+            android:text="@string/ok"
+            android:textColor="@color/text_normal"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/line_normal" />
+	
+    <LinearLayout
+        android:id="@+id/addbirthday_yinli_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_normal"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        
+        <com.wyj.select.WheelVerticalView
+            android:id="@+id/addbirthday_yinli_year"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            app:selectionDivider="@color/line_normal"
+            app:selectionDividerActiveAlpha="100"
+            app:selectionDividerDimmedAlpha="255"
+            app:selectionDividerHeight="1.0dip"
+            app:visibleItems="5" />
+
+        <com.wyj.select.WheelVerticalView
+            android:id="@+id/addbirthday_yinli_month"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            app:selectionDivider="@color/line_normal"
+            app:selectionDividerActiveAlpha="100"
+            app:selectionDividerDimmedAlpha="255"
+            app:selectionDividerHeight="1.0dip"
+            app:visibleItems="5" />
+
+        <com.wyj.select.WheelVerticalView
+            android:id="@+id/addbirthday_yinli_day"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            app:selectionDivider="@color/line_normal"
+            app:selectionDividerActiveAlpha="100"
+            app:selectionDividerDimmedAlpha="255"
+            app:selectionDividerHeight="1.0dip"
+            app:visibleItems="5" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/addbirthday_yangli_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_normal"
+        android:gravity="center"
+        
+        android:orientation="horizontal" >
+
+        
+        <com.wyj.select.WheelVerticalView
+            android:id="@+id/addbirthday_year"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            app:selectionDivider="@color/line_normal"
+            app:selectionDividerActiveAlpha="100"
+            app:selectionDividerDimmedAlpha="255"
+            app:selectionDividerHeight="1.0dip"
+            app:visibleItems="5" />
+
+        <com.wyj.select.WheelVerticalView
+            android:id="@+id/addbirthday_month"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            app:selectionDivider="@color/line_normal"
+            app:selectionDividerActiveAlpha="100"
+            app:selectionDividerDimmedAlpha="255"
+            app:selectionDividerHeight="1.0dip"
+            app:visibleItems="5" />
+
+        <com.wyj.select.WheelVerticalView
+            android:id="@+id/addbirthday_day"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            app:selectionDivider="@color/line_normal"
+            app:selectionDividerActiveAlpha="100"
+            app:selectionDividerDimmedAlpha="255"
+            app:selectionDividerHeight="1.0dip"
+            app:visibleItems="5" />
+    </LinearLayout>
+
+</LinearLayout>

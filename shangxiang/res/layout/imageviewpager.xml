@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/OrderviewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:clipChildren="false" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        >
+		<TextView 
+		    android:id="@+id/OrderviewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:text="返回"
+            android:textSize="26sp"
+            android:textColor="#ffffff"
+            />
+        <LinearLayout
+            android:id="@+id/OrderviewGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        <TextView 
+            android:id="@+id/Orderthumbsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:text="保存"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/OrderImageloading"
+        android:layout_width="20.0dip"
+        android:layout_height="20.0dip"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

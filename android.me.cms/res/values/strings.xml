@@ -29,22 +29,22 @@
 	<string name="sex_male">男</string>
 	<string name="sex_female">女</string>
 	<string name="other_login">第三方登陆</string>
-	
 
-	
-	<string name="tab_home">首页</string>
-	
-	<string name="tab_discover">发现</string>
+
+
+	<string name="tab_home">小组件</string>
+
+	<string name="tab_discover">列表</string>
 	<string name="temp30">标题</string>
 	<string name="temp31">标题的</string>
 	<string name="temp32">标题的</string>
 	<string name="temp33">标题的</string>
-	
+
 	<string name="tab_calendar">日历</string>
-	<string name="tab_my">我的</string>
-	
-	
-	
+	<string name="tab_my">我</string>
+
+
+
 
 	<string name="login_title_text">登录</string>
 	<string name="login_mobile_text">账号：</string>
@@ -75,10 +75,10 @@
 	<string name="forget_password_new_password_hint">输入密码</string>
 	<string name="forget_password_password_desc_hint">密码为6~50个字符，且区分大小</string>
 	<string name="forget_password_button_submit">重置密码</string>
-	
+
 
 	<string name="list_temple_title_text">委托求愿</string>
-	
+
 	<string name="list_temple_listitem_create_order_button">填订单</string>
 
 	<string name="show_temple_title_text"></string>
@@ -106,7 +106,7 @@
 
 	<string name="show_discover_title_text">查看祈福</string>
 	<string name="show_discover_create_order_button">同愿祈福</string>
-	
+
 	<string name="calendar_create_event_button">添加亲友生日</string>
 
 	<string name="show_event_title_text">详情</string>
@@ -170,7 +170,7 @@
 	<string name="my_discover_title_text">求愿与加持</string>
 	<string name="my_discover_switch_tome_text">我的加持</string>
 	<string name="my_discover_switch_toother_text">为我加持</string>
-              
+
 	<string name="order_record_title_text">我的订单</string>
 	<string name="order_record_switch_desire_text">求愿单</string>
 	<string name="order_record_switch_redeem_text">还愿单</string>
@@ -195,17 +195,17 @@
 	<string name="pick_photo_title_text">照片</string>
 	<string name="pick_photo_folder_pathname_text">所有照片</string>
 	<string name="pick_photo_folder_total_text">0张</string>
-	
+
 	<string name="update_ticker_title">开始下载更新</string>
 	<string name="update_notification_ready">准备下载更新</string>
 	<string name="update_notification_downloading">正在下载更新</string>
 	<string name="update_notification_download_success">更新下载完成，点击安装</string>
 	<string name="update_notification_download_error">更新下载失败，请重试</string>
-	
+
 	<string name="dialog_tip">提示</string>
 	<string name="dialog_normal_title">友情提示</string>
-	<string name="dialog_download_update">上香网有新版本需要更新，是否现在去更新？</string>
-	<string name="dialog_newest">您的上香网已经是最新版本！</string>
+	<string name="dialog_download_update">有新版本需要更新，是否现在去更新？</string>
+	<string name="dialog_newest">您的已经是最新版本！</string>
 	<string name="dialog_feedback_tip">意见反馈</string>
 	<string name="dialog_feedback_toshort">我们希望您的反馈意见能多写些内容，建议最少20个字</string>
 	<string name="dialog_feedback_success">谢谢您提交的反馈意见，我们会认真读取您的意见！</string>

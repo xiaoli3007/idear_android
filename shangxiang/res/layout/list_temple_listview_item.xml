@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_highlight"
+    android:padding="10.0dip" >
+
+    <ImageView
+        android:id="@+id/list_temlple_image_1"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+       	android:layout_marginRight="10.0dip"
+       	android:layout_centerVertical="true"
+       	android:layout_gravity="center_vertical"
+       	android:scaleType="centerCrop"
+       	android:background="#00000000"
+        android:src="@drawable/temp1" />
+ 
+     <ImageView
+        android:id="@+id/list_temlple_image_2"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_centerVertical="true"
+       	android:layout_toRightOf="@+id/list_temlple_image_1"
+        android:layout_marginRight="10.0dip"
+       	android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:background="#00000000"
+        android:src="@drawable/temp2" />
+     
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_toLeftOf="@+id/list_temple_order_button"
+        android:layout_toRightOf="@+id/list_temlple_image_2"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/list_temple_hall_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="五台山（山西）"
+            android:textSize="16.0sp" />
+		<TextView
+            android:id="@+id/list_temple_buddhist_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="普润法师"
+            android:textColor="@color/text_gray"
+            android:textSize="12.0sp" />
+    </LinearLayout>    
+    
+	 <Button
+        android:id="@id/list_temple_order_button"
+        android:layout_width="70.0dip"
+        android:layout_height="34.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_normal"
+        android:text="填定单"
+        android:textColor="#ffffffff"
+        android:focusable="false"
+        android:clickable="true"
+        android:textSize="14.0sp" />
+</RelativeLayout>

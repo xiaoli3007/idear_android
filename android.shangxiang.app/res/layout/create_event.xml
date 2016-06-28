@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.shangxiang.android"
+    android:id="@id/create_event_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_normal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/create_event_title_layout"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="15.0dip"
+                android:text="@string/create_event_event_title_text"
+                android:textSize="16.0sp" />
+
+            <EditText
+                android:id="@id/create_event_event_title_input"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:background="#00000000"
+                android:hint="@string/create_event_event_title_hint"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="50"
+                android:paddingRight="15.0dip"
+                android:singleLine="true"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="15.0dip"
+                android:text="@string/create_event_date_text"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@id/create_event_select_date_show_button"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:background="#00000000"
+                android:gravity="left|center_vertical"
+                android:hint="@string/create_event_date_hint"
+                android:maxLength="50"
+                android:paddingRight="15.0dip"
+                android:singleLine="true"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="15.0dip"
+                android:text="@string/create_event_remind_text"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@id/create_event_select_remind_show_button"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:background="#00000000"
+                android:gravity="left|center_vertical"
+                android:maxLength="50"
+                android:paddingRight="15.0dip"
+                android:singleLine="true"
+                android:text="@string/create_event_remind_hint"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/loading"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_below="@id/create_event_title_layout"
+        android:background="#ff333333"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@id/progress_bar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:layout_centerVertical="true"
+            android:indeterminate="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/progress_bar"
+            android:text="@string/loading"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/create_event_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:background="@color/background_normal" >
+
+        <TextView
+            android:id="@id/create_event_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/create_event_title_text"
+            android:textColor="@color/text_title"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@id/create_event_title_back_button"
+            android:layout_width="40.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/button_back"
+            android:paddingLeft="10.0dip"
+            android:text="" />
+
+        <Button
+            android:id="@id/create_event_title_save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/save"
+            android:textColor="@color/text_title"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/create_event_select_date_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#99000000"
+        android:clickable="true"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_normal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="@string/create_event_date_text"
+                android:textSize="16.0sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@id/create_event_select_date_gregorian_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:checked="true"
+                    android:padding="8.0dip"
+                    android:text="@string/create_event_gregorian_date_button"
+                    android:textColor="@drawable/segment_item_text_color2"
+                    android:textSize="14.0sp" />
+
+                <RadioButton
+                    android:id="@id/create_event_select_date_lunar_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:padding="8.0dip"
+                    android:text="@string/create_event_lunar_date_button"
+                    android:textColor="@drawable/segment_item_text_color2"
+                    android:textSize="14.0sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@id/create_event_select_date_ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:paddingRight="10.0dip"
+                android:text="@string/ok"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_normal"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <com.shangxiang.android.spinnerwheel.WheelVerticalView
+                android:id="@id/create_event_select_date_year_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:selectionDivider="@color/line_normal"
+                app:selectionDividerActiveAlpha="100"
+                app:selectionDividerDimmedAlpha="255"
+                app:selectionDividerHeight="1.0dip"
+                app:visibleItems="5" />
+
+            <com.shangxiang.android.spinnerwheel.WheelVerticalView
+                android:id="@id/create_event_select_date_month_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:selectionDivider="@color/line_normal"
+                app:selectionDividerActiveAlpha="100"
+                app:selectionDividerDimmedAlpha="255"
+                app:selectionDividerHeight="1.0dip"
+                app:visibleItems="5" />
+
+            <com.shangxiang.android.spinnerwheel.WheelVerticalView
+                android:id="@id/create_event_select_date_day_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:selectionDivider="@color/line_normal"
+                app:selectionDividerActiveAlpha="100"
+                app:selectionDividerDimmedAlpha="255"
+                app:selectionDividerHeight="1.0dip"
+                app:visibleItems="5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/create_event_select_remind_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#99000000"
+        android:clickable="true"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_normal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="@string/create_event_remind_text"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@id/create_event_select_remind_cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:paddingLeft="10.0dip"
+                android:text="@string/cancel"
+                android:textSize="14.0sp" />
+
+            <Button
+                android:id="@id/create_event_select_remind_ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:paddingRight="10.0dip"
+                android:text="@string/ok"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_normal"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.shangxiang.android.spinnerwheel.WheelVerticalView
+                android:id="@id/create_event_select_remind_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:selectionDivider="@color/line_normal"
+                app:selectionDividerActiveAlpha="100"
+                app:selectionDividerDimmedAlpha="255"
+                app:selectionDividerHeight="1.0dip"
+                app:visibleItems="5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

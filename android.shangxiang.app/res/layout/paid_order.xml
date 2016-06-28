@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/paid_order_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_highlight" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/paid_order_title_layout"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginTop="20.0dip"
+            android:contentDescription="@string/desc"
+            android:scaleType="center"
+            android:src="@drawable/icon_success" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip" >
+
+            <Button
+                android:id="@id/paid_order_show_order_button"
+                android:layout_width="100.0dip"
+                android:layout_height="30.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30.0dip"
+                android:background="@drawable/button_gray"
+                android:text="@string/paid_order_show_detail_text"
+                android:textColor="#ffffffff"
+                android:textSize="14.0sp" />
+
+            <Button
+                android:id="@id/paid_order_shareto_button"
+                android:layout_width="100.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30.0dip"
+                android:background="@drawable/button_gray"
+                android:text="@string/shareto"
+                android:textColor="#ffffffff"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@id/paid_order_some_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_normal"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/loading"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_below="@id/paid_order_title_layout"
+        android:background="#ff333333"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@id/progress_bar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:layout_centerVertical="true"
+            android:indeterminate="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/progress_bar"
+            android:text="@string/loading"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/paid_order_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:background="@color/background_navbar" >
+
+        <TextView
+            android:id="@id/paid_order_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/paid_order_title_text"
+            android:textColor="@color/text_title"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@id/paid_order_title_back_button"
+            android:layout_width="40.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/button_back"
+            android:paddingLeft="10.0dip"
+            android:text="" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/paid_order_shareto_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#99000000"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:background="@drawable/form_background"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/paid_order_shareto_circle_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:drawableLeft="@drawable/shareto_circle"
+                android:drawablePadding="5.0dip"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:text="@string/paid_order_shareto_circle_text"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_normal" />
+
+            <TextView
+                android:id="@id/paid_order_shareto_friend_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:drawableLeft="@drawable/shareto_friend"
+                android:drawablePadding="5.0dip"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:text="@string/paid_order_shareto_friend_text"
+                android:textSize="14.0sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/paid_order_shareto_weibo_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:drawableLeft="@drawable/shareto_weibo"
+                android:drawablePadding="5.0dip"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:text="@string/paid_order_shareto_weibo_text"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_normal" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/temp24"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@id/paid_order_shareto_content_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="false"
+                        android:text=""
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:contentDescription="@string/desc"
+                    android:scaleType="center"
+                    android:src="@drawable/app_icon" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

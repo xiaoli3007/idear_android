@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.shangxiang.android"
+    android:id="@id/create_order_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_normal" >
+
+    <ScrollView
+        android:id="@id/create_order_main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/create_order_title_layout" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10.0dip"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip"
+                android:paddingTop="10.0dip" >
+
+                <RelativeLayout
+                    android:id="@id/create_order_hall_thumb_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10.0dip" >
+
+                    <ImageButton
+                        android:id="@id/create_order_hall_thumb_button"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:background="#00000000"
+                        android:contentDescription="@string/desc"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_not_available" />
+
+                    <ProgressBar
+                        android:id="@+id/create_order_hall_thumb_loading"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/create_order_buddhist_thumb_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_toRightOf="@id/create_order_hall_thumb_layout" >
+
+                    <ImageButton
+                        android:id="@id/create_order_buddhist_thumb_button"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:background="#00000000"
+                        android:contentDescription="@string/desc"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_not_available" />
+
+                    <ProgressBar
+                        android:id="@+id/create_order_buddhist_thumb_loading"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toLeftOf="@id/create_order_desire_type_button"
+                    android:layout_toRightOf="@id/create_order_buddhist_thumb_layout"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@id/create_order_hall_name_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@id/create_order_buddhist_name_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2.0dip"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/text_gray"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@id/create_order_desire_type_button"
+                    android:layout_width="70.0dip"
+                    android:layout_height="34.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/background_highlight"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:text="@string/temp12"
+                    android:textColor="@color/text_hint"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_normal" />
+
+            <RelativeLayout
+                android:id="@id/create_order_content_desire_title_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5.0dip"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip"
+                android:paddingTop="20.0dip"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@id/create_order_content_desire_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/create_order_content_desire_title_text"
+                    android:textSize="14.0sp" />
+
+                <Button
+                    android:id="@id/create_order_select_content_show_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:drawablePadding="5.0dip"
+                    android:drawableRight="@drawable/arrow_bottom"
+                    android:text="@string/create_order_content_select_text"
+                    android:textColor="@drawable/button_pressed_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/create_order_content_redeem_title_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5.0dip"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip"
+                android:paddingTop="20.0dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@id/create_order_content_redeem_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/temp13"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@id/create_order_content_text"
+                android:layout_width="fill_parent"
+                android:layout_height="80.0dip"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginRight="18.0dip"
+                android:background="@drawable/form_background"
+                android:focusable="true"
+                android:gravity="top"
+                android:hint="@string/create_order_content_hint_text"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:padding="5.0dip"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:textColor="#ff000000"
+                android:textSize="14.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="10.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/create_order_other_desirer_text"
+                        android:textSize="14.0sp" />
+
+                    <EditText
+                        android:id="@id/create_order_other_desirer_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_marginTop="2.0dip"
+                        android:background="@drawable/form_background"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:paddingLeft="15.0dip"
+                        android:paddingRight="15.0dip"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8.0dip"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/create_order_other_JSC_text"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@id/create_order_select_JSC_show_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_marginTop="2.0dip"
+                        android:background="@drawable/form_background"
+                        android:gravity="left|center_vertical"
+                        android:maxLength="50"
+                        android:paddingLeft="15.0dip"
+                        android:paddingRight="15.0dip"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="14.0sp" />
+
+                    <LinearLayout
+                        android:id="@id/create_order_select_region_show_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dip"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@string/create_order_other_region_text"
+                            android:textSize="14.0sp" />
+
+                        <TextView
+                            android:id="@id/create_order_select_region_show_button"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:background="@drawable/form_background"
+                            android:gravity="left|center_vertical"
+                            android:maxLength="50"
+                            android:paddingLeft="15.0dip"
+                            android:paddingRight="15.0dip"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColorHint="@color/text_hint"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@id/create_order_select_region_show_moved_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dip"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@string/create_order_other_region_text"
+                            android:textSize="14.0sp" />
+
+                        <TextView
+                            android:id="@id/create_order_select_region_show_button"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:background="@drawable/form_background"
+                            android:gravity="left|center_vertical"
+                            android:maxLength="50"
+                            android:paddingLeft="15.0dip"
+                            android:paddingRight="15.0dip"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColorHint="@color/text_hint"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/create_order_other_mobile_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@string/create_order_other_mobile_text"
+                            android:textSize="14.0sp" />
+
+                        <EditText
+                            android:id="@id/create_order_other_mobile_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:background="@drawable/form_background"
+                            android:imeOptions="actionNext"
+                            android:inputType="phone"
+                            android:maxLength="50"
+                            android:paddingLeft="15.0dip"
+                            android:paddingRight="15.0dip"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColorHint="@color/text_hint"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8.0dip"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/create_order_other_date_text"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@id/create_order_select_date_show_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_marginTop="2.0dip"
+                        android:background="@drawable/form_background"
+                        android:gravity="left|center_vertical"
+                        android:maxLength="50"
+                        android:paddingLeft="15.0dip"
+                        android:paddingRight="15.0dip"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@id/create_order_submit_button"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/button_normal"
+                android:text="@string/submit"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@id/loading"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_below="@id/create_order_title_layout"
+        android:background="#ff333333"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@id/progress_bar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:layout_centerVertical="true"
+            android:indeterminate="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/progress_bar"
+            android:text="@string/loading"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/create_order_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:background="@color/background_navbar" >
+
+        <TextView
+            android:id="@id/create_order_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/create_order_title_text"
+            android:textColor="@color/text_title"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@id/create_order_title_back_button"
+            android:layout_width="40.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/button_back"
+            android:paddingLeft="10.0dip"
+            android:text="" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/create_order_select_content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#99000000"
+        android:clickable="true"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_normal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="@string/create_order_content_select_text"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@id/create_order_select_content_cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:paddingLeft="10.0dip"
+                android:text="@string/cancel"
+                android:textSize="14.0sp" />
+
+            <Button
+                android:id="@id/create_order_select_content_ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:paddingRight="10.0dip"
+                android:text="@string/ok"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_normal"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.shangxiang.android.spinnerwheel.WheelVerticalView
+                android:id="@id/create_order_select_content_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:selectionDivider="@color/line_normal"
+                app:selectionDividerActiveAlpha="100"
+                app:selectionDividerDimmedAlpha="255"
+                app:selectionDividerHeight="1.0dip"
+                app:visibleItems="5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/create_order_select_JSC_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#99000000"
+        android:clickable="true"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_normal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="@string/create_order_other_JSC_text"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@id/create_order_select_JSC_cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:paddingLeft="10.0dip"
+                android:text="@string/cancel"
+                android:textSize="14.0sp" />
+
+            <Button
+                android:id="@id/create_order_select_JSC_ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:paddingRight="10.0dip"
+                android:text="@string/ok"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_normal"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.shangxiang.android.spinnerwheel.WheelVerticalView
+                android:id="@id/create_order_select_JSC_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:selectionDivider="@color/line_normal"
+                app:selectionDividerActiveAlpha="100"
+                app:selectionDividerDimmedAlpha="255"
+                app:selectionDividerHeight="1.0dip"
+                app:visibleItems="5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/create_order_select_region_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#99000000"
+        android:clickable="true"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_normal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="@string/create_order_other_region_text"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@id/create_order_select_region_cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:paddingLeft="10.0dip"
+                android:text="@string/cancel"
+                android:textSize="14.0sp" />
+
+            <Button
+                android:id="@id/create_order_select_region_ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:paddingRight="10.0dip"
+                android:text="@string/ok"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_normal"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <com.shangxiang.android.spinnerwheel.WheelVerticalView
+                android:id="@id/create_order_select_region_prov_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:selectionDivider="@color/line_normal"
+                app:selectionDividerActiveAlpha="100"
+                app:selectionDividerDimmedAlpha="255"
+                app:selectionDividerHeight="1.0dip"
+                app:visibleItems="5" />
+
+            <com.shangxiang.android.spinnerwheel.WheelVerticalView
+                android:id="@id/create_order_select_region_city_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:selectionDivider="@color/line_normal"
+                app:selectionDividerActiveAlpha="100"
+                app:selectionDividerDimmedAlpha="255"
+                app:selectionDividerHeight="1.0dip"
+                app:visibleItems="5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/create_order_select_date_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#99000000"
+        android:clickable="true"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_normal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="@string/create_order_other_date_text"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@id/create_order_select_date_cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:paddingLeft="10.0dip"
+                android:text="@string/cancel"
+                android:textSize="14.0sp" />
+
+            <Button
+                android:id="@id/create_order_select_date_ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:paddingRight="10.0dip"
+                android:text="@string/ok"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_normal"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <com.shangxiang.android.spinnerwheel.WheelVerticalView
+                android:id="@id/create_order_select_date_year_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:selectionDivider="@color/line_normal"
+                app:selectionDividerActiveAlpha="100"
+                app:selectionDividerDimmedAlpha="255"
+                app:selectionDividerHeight="1.0dip"
+                app:visibleItems="5" />
+
+            <com.shangxiang.android.spinnerwheel.WheelVerticalView
+                android:id="@id/create_order_select_date_month_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:selectionDivider="@color/line_normal"
+                app:selectionDividerActiveAlpha="100"
+                app:selectionDividerDimmedAlpha="255"
+                app:selectionDividerHeight="1.0dip"
+                app:visibleItems="5" />
+
+            <com.shangxiang.android.spinnerwheel.WheelVerticalView
+                android:id="@id/create_order_select_date_day_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:selectionDivider="@color/line_normal"
+                app:selectionDividerActiveAlpha="100"
+                app:selectionDividerDimmedAlpha="255"
+                app:selectionDividerHeight="1.0dip"
+                app:visibleItems="5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

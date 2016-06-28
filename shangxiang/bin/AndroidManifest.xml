@@ -1,0 +1,249 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wyj.Activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:name="com.wyj.pipe.Cms"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/SinhaTheme" >
+        <activity
+            android:name=".TabMenu"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wyj.Activity.WishGroupTab" >
+        </activity>
+        <activity android:name="com.wyj.Activity.Wish" >
+        </activity>
+        <activity android:name="com.wyj.Activity.ListTemple" >
+        </activity>
+        <activity android:name="com.wyj.Activity.ShowTemple" >
+        </activity>
+        <activity android:name="com.wyj.Activity.ShowPhotoActivity" >
+        </activity>
+        <activity android:name="com.wyj.Activity.OrderForm" >
+        </activity>
+        <activity android:name="com.wyj.Activity.OrderFormDetail" >
+        </activity>
+         <activity android:name="com.wyj.Activity.Imageviewpager" >
+        </activity>
+        
+        <activity android:name="com.wyj.Activity.OrderFormPay" >
+        </activity>
+        <activity android:name="com.wyj.Activity.OrderPaySucc" >
+        </activity>
+        <activity android:name="com.wyj.Activity.FindGroupTab" >
+        </activity>
+        <activity android:name="com.wyj.Activity.UserGroupTab" >
+        </activity>
+        <activity android:name="com.wyj.Activity.Find" >
+        </activity>
+        <activity android:name="com.wyj.Activity.FoLiGroupTab" >
+        </activity>
+        <activity android:name="com.wyj.Activity.Foli" >
+        </activity>
+        <activity android:name="com.wyj.Activity.AddBirthday" >
+        </activity>
+        <activity android:name="com.wyj.Activity.Birthday_detail" >
+        </activity>
+        <activity android:name="com.wyj.Activity.My" >
+        </activity>
+        <activity android:name="com.wyj.Activity.MyFind" >
+        </activity>
+        <activity android:name="com.wyj.Activity.MyOrder" >
+        </activity>
+        <activity android:name="com.wyj.Activity.User" >
+        </activity>
+        <activity android:name="com.wyj.Activity.UserInfo" >
+        </activity>
+        <activity android:name="com.wyj.Activity.Login" >
+        </activity>
+        <activity android:name="com.wyj.Activity.About" >
+        </activity>
+        <activity android:name="com.wyj.Activity.Forget_Passwd" >
+        </activity>
+        <activity android:name="com.wyj.Activity.Forget_Passwd_two" >
+        </activity>
+        <activity android:name="com.wyj.Activity.Forget_Passwd_three" >
+        </activity>
+        <activity android:name="com.wyj.Activity.Reg" >
+        </activity>
+        <activity android:name="com.wyj.Activity.Suggestion" >
+        </activity>
+        <activity android:name="com.wyj.Activity.Remind" >
+        </activity>
+        <activity android:name="com.wyj.Activity.Find_item" >
+        </activity>
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="com.wyj.services.AutoLoginService"
+            android:launchMode="singleTask" />
+
+        <!-- For test only 测试状态通知栏，需要打开的Activity -->
+        <activity
+            android:name="com.wyj.jpush.TestActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="jpush.testAction" />
+
+                <category android:name="jpush.testCategory" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.wyj.Activity" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+ <!-- Required  显示通知栏 -->
+                <category android:name="com.wyj.Activity" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.wyj.jpush.MyReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+ <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+ <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+ <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+ <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+ <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+ <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.wyj.Activity" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="6e97961c5555abc6b3a31d5c" />
+ <!-- </>值来自开发者平台取得的AppKey -->
+
+    </application>
+
+    <permission
+        android:name="com.wyj.Activity.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.wyj.Activity.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 用于调用 JNI -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+</manifest>

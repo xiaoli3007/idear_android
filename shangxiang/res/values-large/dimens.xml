@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="week_top_margin">74px</dimen>
+    <dimen name="week_left_margin">116px</dimen>
+    <dimen name="cell_width">58px</dimen>
+    <dimen name="cell_heigh">53px</dimen>
+    <dimen name="cell_margin_top">92px</dimen>
+    <dimen name="cell_margin_left">115px</dimen>
+    <dimen name="cell_text_size">26px</dimen>
+    
+    <dimen name="home_desire_bottom">143.0dip</dimen>
+    <dimen name="home_desire_0">20.0dip</dimen>
+    <dimen name="home_desire_1">58.0dip</dimen>
+    <dimen name="home_desire_2">100.0dip</dimen>
+    <dimen name="home_desire_4">100.0dip</dimen>
+    <dimen name="home_desire_5">58.0dip</dimen>
+    <dimen name="home_desire_6">20.0dip</dimen>
+
+</resources>

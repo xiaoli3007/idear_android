@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/paid_order_some_shareto_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_normal"
+        android:orientation="vertical"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@id/paid_order_some_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_dot"
+            android:drawablePadding="10.0dip"
+            android:text=""
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="10.0dip"
+            android:text="@string/shareto_some"
+            android:textColor="@color/text_title"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/line_normal" />
+
+</LinearLayout>

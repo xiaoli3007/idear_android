@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.wyj.Activity"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/line_normal" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@color/background_normal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="10.0dip"
+            android:text="提醒"
+            android:textSize="16.0sp" />
+
+        <Button
+            android:id="@+id/addbirthday_remind_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:paddingRight="10.0dip"
+            android:textColor="@color/text_normal"
+            android:text="@string/ok"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/line_normal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_normal"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.wyj.select.WheelVerticalView
+            android:id="@+id/addbirthday_remind_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            app:selectionDivider="@color/line_normal"
+            app:selectionDividerActiveAlpha="100"
+            app:selectionDividerDimmedAlpha="255"
+            app:selectionDividerHeight="1.0dip"
+            app:visibleItems="5" />
+    </LinearLayout>
+
+</LinearLayout>
