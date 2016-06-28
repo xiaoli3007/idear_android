@@ -77,35 +77,12 @@
 	<string name="forget_password_button_submit">重置密码</string>
 
 
-	<string name="list_temple_title_text">委托求愿</string>
-
-	<string name="list_temple_listitem_create_order_button">填订单</string>
-
-	<string name="show_temple_title_text"></string>
-	<string name="show_temple_switch_hall_text">寺庙介绍</string>
-	<string name="show_temple_switch_buddhist_text">法师介绍</string>
-	<string name="show_temple_create_order_button">在此求愿</string>
-
-	<string name="create_order_title_text">填写订单</string>
-	<string name="create_order_content_title_text">填写内容</string>
-	<string name="create_order_content_select_text">精选</string>
-	<string name="create_order_content_hint_text">请输入求愿内容（建议100字以内）</string>
-	<string name="create_order_content_hint2_text">请输入还愿内容（建议100字以内）</string>
-	<string name="create_order_other_desirer_text">求愿人</string>
-	<string name="create_order_other_mobile_text">手机</string>
-	<string name="create_order_other_region_text">我的位置</string>
-	<string name="create_order_other_JSC_text">香烛类型</string>
-	<string name="create_order_other_date_text">预约日期</string>
-
 	<string name="paid_order_record_title_text">支付成功</string>
 	<string name="paid_order_record_show_detail_text">查看订单</string>
 	<string name="paid_order_record_shareto_circle_text">分享到朋友圈</string>
 	<string name="paid_order_record_shareto_friend_text">分享给微信好友</string>
 
 	<string name="discover_title_text">发现</string>
-
-	<string name="show_discover_title_text">查看祈福</string>
-	<string name="show_discover_create_order_button">同愿祈福</string>
 
 	<string name="calendar_create_event_button">添加亲友生日</string>
 
@@ -122,9 +99,6 @@
 
 	<string name="my_title_text">我的</string>
 	<string name="my_user_need_login">请登录</string>
-	<string name="my_user_discover_total_tome_button">我的加持</string>
-	<string name="my_user_discover_total_toother_button">为我加持</string>
-	<string name="my_menu_order_record_text">订单查询</string>
 	<string name="my_menu_notice_text">系统通知</string>
 	<string name="my_menu_settings_text">设置</string>
 	<string name="my_menu_feedback_text">意见反馈</string>
@@ -167,22 +141,11 @@
 	<string name="modify_info_submit_button">确认修改资料</string>
 	<string name="modify_info_sex_select_title_text">性别</string>
 
-	<string name="my_discover_title_text">求愿与加持</string>
-	<string name="my_discover_switch_tome_text">我的加持</string>
-	<string name="my_discover_switch_toother_text">为我加持</string>
-
-	<string name="order_record_title_text">我的订单</string>
-	<string name="order_record_switch_desire_text">求愿单</string>
-	<string name="order_record_switch_redeem_text">还愿单</string>
-
-	<string name="show_order_record_title_text">订单详情</string>
-	<string name="show_order_record_action_title_text">代上香祈福记录</string>
-	<string name="show_order_record_action_content_text">预计2015&#8211;01&#8211;02回执照片</string>
 
 	<string name="notice_title_text">系统通知</string>
 
 	<string name="settings_title_text">设置</string>
-	<string name="settings_menu_show_push_text">佛历提醒</string>
+	<string name="settings_menu_show_push_text">提醒</string>
 	<string name="settings_menu_obtain_region_text">获取当前地理位置</string>
 
 	<string name="feedback_title_text">意见反馈</string>
@@ -239,8 +202,7 @@
 	<string name="dialog_register_result_err">注册失败</string>
 	<string name="dialog_reset_password_tip">密码修改</string>
 	<string name="dialog_reset_password_success">已经成功修改密码，请用新密码登录</string>
-	<string name="dialog_reset_password_other">微信、微博登陆请前往该服务商平台修改</string>
-	<string name="dialog_create_order_success">订单提交成功！请完成支付！</string>
+
 	<string name="dialog_logout_tip">退出登陆</string>
 	<string name="dialog_logout_content">您确定退出当前帐号吗？</string>
 	<string name="dialog_logout_success">成功退出</string>

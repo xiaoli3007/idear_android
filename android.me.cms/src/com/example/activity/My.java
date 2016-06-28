@@ -17,9 +17,6 @@ public class My extends BaseFragment {
 	private ImageView viewUserHead;
 	private TextView viewUserLabel;
 	private Button buttonUserNext;
-	private Button buttonMenuTomeDiscover;
-	private Button buttonMenuTootherDiscover;
-	private Button buttonMenuOrderRecord;
 	private Button buttonMenuNotice;
 	private Button buttonMenuSettings;
 	private Button buttonMenuFeedback;
@@ -33,12 +30,6 @@ public class My extends BaseFragment {
 		this.viewUserLabel = (TextView) view.findViewById(R.id.my_user_label_text);
 		this.buttonUserNext = (Button) view.findViewById(R.id.my_user_next_button);
 		this.buttonUserNext.setOnClickListener(this);
-		this.buttonMenuTomeDiscover = (Button) view.findViewById(R.id.my_user_discover_total_tome_button);
-		this.buttonMenuTomeDiscover.setOnClickListener(this);
-		this.buttonMenuTootherDiscover = (Button) view.findViewById(R.id.my_user_discover_total_toother_button);
-		this.buttonMenuTootherDiscover.setOnClickListener(this);
-		this.buttonMenuOrderRecord = (Button) view.findViewById(R.id.my_menu_order_record_button);
-		this.buttonMenuOrderRecord.setOnClickListener(this);
 		this.buttonMenuNotice = (Button) view.findViewById(R.id.my_menu_notice_button);
 		this.buttonMenuNotice.setOnClickListener(this);
 		this.buttonMenuSettings = (Button) view.findViewById(R.id.my_menu_settings_button);
@@ -77,11 +68,9 @@ public class My extends BaseFragment {
 				goActivity(Login.class);
 			}
 		}
-		if (v == this.buttonMenuTomeDiscover || v == this.buttonMenuTootherDiscover) {
-			goFragment(new MyDiscover());
-		}
-	
-	
+
+
+	//	goFragment(new MyDiscover());
 		if (v == this.buttonMenuAbout) {
 			Bundle bundle = new Bundle();
 			bundle.putString("title", getActivity().getString(R.string.about_title_text));

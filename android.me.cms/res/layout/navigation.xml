@@ -52,7 +52,7 @@
             android:layout_weight="1"
             android:background="#00000000"
             android:button="@null"
-            android:drawableTop="@drawable/tab_calendar"
+            android:drawableTop="@drawable/tab_home"
             android:gravity="center"
             android:text="@string/tab_calendar"
             android:textColor="@drawable/tab_text_color"
