@@ -21,7 +21,7 @@
                 android:id="@id/change_mobile_form_layout"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/logo"
+
                 android:layout_marginTop="20.0dip"
                 android:orientation="vertical" >
 
@@ -126,7 +126,7 @@
                 android:id="@id/change_mobile_new_mobile_layout"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/logo"
+
                 android:layout_marginTop="20.0dip"
                 android:orientation="vertical"
                 android:visibility="gone" >

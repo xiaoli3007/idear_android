@@ -55,9 +55,9 @@ public class MyPopupWindowsHomeSelectSingle extends PopupWindow {
 		RemindAdapter JSCAdapter = new RemindAdapter(mContext);
 		JSCAdapter.JSCs = data;
 		JSCSelect.setViewAdapter(JSCAdapter);
-		JSCSelect.setCurrentItem(3);
-		JSCSelect.setCyclic(true);
-
+		JSCSelect.setCurrentItem(0);
+		JSCSelect.setCyclic(false);
+	//	JSCAdapter.getItem(JSCSelect.getCurrentItem(),null);
 
 		popupwindow = new PopupWindow(customView);
 		 //以下为弹窗后面的背景色设置
@@ -107,7 +107,7 @@ public class MyPopupWindowsHomeSelectSingle extends PopupWindow {
 				try {
 					JSONObject	jsonboject2 = jsonArray.getJSONObject(select);
 
-					EditText list_find_zany=(EditText) parent;
+					TextView list_find_zany=(TextView) parent;
 					//TextView list_find_price=(TextView) price;
 					list_find_zany.setText(jsonboject2.optString("name"));
 				//	list_find_price.setText("￥"+jsonboject2.optString("price"));
@@ -155,6 +155,7 @@ public class MyPopupWindowsHomeSelectSingle extends PopupWindow {
 		@Override
 		public View getItem(int index, View cachedView, ViewGroup parent) {
 			View view = super.getItem(index, cachedView, parent);
+			//view.setBackgroundColor(context.getResources().getColor(R.color.button_gray ));
 			TextView JSCView = (TextView) view.findViewById(R.id.select_custom_text);
 			JSCView.setText(this.JSCs[index]);
 			return view;

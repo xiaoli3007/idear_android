@@ -1,82 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@id/discover_layout"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@color/background_normal" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#ffffff"
+              android:orientation="vertical" >
 
+    <LinearLayout
+            android:id="@+id/daochang_select"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#f2ebce"
+            android:gravity="center_horizontal" >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal" >
+
+            <TextView
+                    android:id="@+id/daochang_select_showname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="全部道场"
+                    android:textSize="16sp"
+                    />
+
+        </LinearLayout>
+    </LinearLayout>
 
 
     <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_below="@id/discover_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
 
-            >
 
-        <ListView
-                android:id="@id/discover_container"
+        <com.example.xlistview.XListView
+                android:id="@+id/find_list"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:background="#ffffffff"
-                android:cacheColorHint="#00000000"
+                android:cacheColorHint="#cccccccc"
                 android:divider="@drawable/list_divider"
-                android:dividerHeight="1dip"
-                android:fastScrollEnabled="false"
-                android:headerDividersEnabled="true"
-                android:listSelector="#00000000"
-                android:scrollingCache="true" />
+                android:dividerHeight="0.5dip" />
 
 
     </LinearLayout>
 
-     <RelativeLayout
-            android:id="@id/loading"
-            android:layout_width="fill_parent"
-            android:layout_height="50dip"
-            android:layout_below="@id/discover_title_layout"
-            android:background="#ff333333"
-            android:gravity="center"
-            android:visibility="gone" >
-
-            <ProgressBar
-                android:id="@id/progress_bar"
-                style="?android:attr/progressBarStyleSmall"
-                android:layout_width="24dip"
-                android:layout_height="24dip"
-                android:layout_centerVertical="true"
-                android:indeterminate="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="8dip"
-                android:layout_toRightOf="@id/progress_bar"
-                android:text="@string/loading"
-                android:textColor="#ffffffff" />
-        </RelativeLayout>
 
 
 
-    <RelativeLayout
-            android:id="@id/discover_title_layout"
-            android:layout_width="fill_parent"
-            android:layout_height="44.0dip"
-            android:background="@color/background_navbar" >
-
-        <Button
-                android:id="@id/discover_title_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:background="#00000000"
-                android:drawablePadding="5.0dip"
-                android:drawableRight="@drawable/arrow_bottom"
-                android:text="@string/discover_title_text"
-                android:textColor="@color/text_title"
-                android:textSize="18.0sp" />
-    </RelativeLayout>
-
-</RelativeLayout>
+</LinearLayout>

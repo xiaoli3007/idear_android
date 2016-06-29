@@ -58,7 +58,9 @@
             app:selectionDividerActiveAlpha="100"
             app:selectionDividerDimmedAlpha="255"
             app:selectionDividerHeight="1.0dip"
-            app:visibleItems="5" />
+            app:visibleItems="5"
+            app:abstractWheelViewStyle="@color/background_navbar"
+                />
     </LinearLayout>
 
 </LinearLayout>

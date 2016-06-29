@@ -1,10 +1,9 @@
 package com.example.activity;
 
-import android.webkit.JavascriptInterface;
-import android.webkit.WebView;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
+import android.util.Log;
+
+import android.widget.TextView;
+
 import com.example.cms.BaseFragment;
 import com.example.cms.R;
 
@@ -13,7 +12,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import com.example.popupwindow.MyPopupWindowsBirthDayDate;
+import com.example.popupwindow.MyPopupWindowsCity;
+import com.example.popupwindow.MyPopupWindowsDate;
 import com.example.popupwindow.MyPopupWindowsHomeSelectSingle;
+import com.example.utils.JsonString;
 import com.example.utils.Utils;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -22,17 +25,21 @@ import org.json.JSONObject;
 
 public class Home extends BaseFragment {
 
-	private EditText home_single_select,home_double_select,home_three_select;
+	private TextView home_single_select,home_double_select,home_three_select,home_select_birthday;
 	//private  JSONArray home_single_select_data;
 	@SuppressLint("InflateParams")
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle sinha) {
 		View view = inflater.inflate(R.layout.home, null);
 
-			this.home_single_select =(EditText) view.findViewById(R.id.home_single_select);
-			this.home_double_select =(EditText) view.findViewById(R.id.home_double_select);
-			this.home_three_select =(EditText) view.findViewById(R.id.home_three_select);
+			this.home_single_select =(TextView) view.findViewById(R.id.home_single_select);
+			this.home_double_select =(TextView) view.findViewById(R.id.home_double_select);
+			this.home_three_select =(TextView) view.findViewById(R.id.home_three_select);
+			this.home_select_birthday =(TextView) view.findViewById(R.id.home_select_birthday);
 
-		this.home_single_select.setOnClickListener(this);
+			this.home_single_select.setOnClickListener(this);
+			this.home_double_select.setOnClickListener(this);
+			this.home_three_select.setOnClickListener(this);
+			this.home_select_birthday.setOnClickListener(this);
 
 		return view;
 	}
@@ -47,10 +54,9 @@ public class Home extends BaseFragment {
 
 		if (v == this.home_single_select) {
 
-			Utils.hideKeyboard(getActivity());
+		//	Utils.hideKeyboard(getActivity()); 隐藏键盘
 			try{
-				JSONObject result = new JSONObject("{\"code\":\"succeed\",\"msg\":\"\\u8bfb\\u53d6\\u6210\\u529f\\uff01\",\"wishgradeinfo\":[{\"val\":1,\"name\":\"\\u6e05\\u9999\",\"price\":19,\"desc\":\"\\u4e00\\u822c\\u7684\\u7948\\u798f\\u796d\\u62dc\\u4f7f\\u7528\"},{\"val\":2,\"name\":\"\\u9ad8\\u9999\",\"price\":99,\"desc\":\"\\u4f53\\u79ef\\u8f83\\u5927\\u7528\\u6599\\u66f4\\u4f73\\u7684\\u9999\"},{\"val\":3,\"name\":\"\\u5f00\\u5149\\u9999\",\"price\":198,\"desc\":\"\\u7ecf\\u7531\\u9ad8\\u50e7\\u5f00\\u5149\\u52a0\\u6301\\u7684\\u9ad8\\u9999\"}]}");
-			//	home_single_select_data = result.getJSONArray("wishgradeinfo");
+				JSONObject result = new JSONObject(JsonString.get_home_single_select());
 
 				new MyPopupWindowsHomeSelectSingle(getActivity(),
 						home_single_select, getActivity(), result.getJSONArray("wishgradeinfo"));
@@ -58,6 +64,41 @@ public class Home extends BaseFragment {
 				e.printStackTrace();
 			}
 
+		}
+
+		if (v == this.home_double_select) {
+
+			try{
+				JSONArray result = new JSONArray(Utils.getRegions());
+				new MyPopupWindowsCity(getActivity(),
+						home_double_select, getActivity(), result);
+			} catch (JSONException e){
+				e.printStackTrace();
+			}
+
+		}
+
+		if (v == this.home_three_select) {
+
+				new MyPopupWindowsDate(getActivity(),
+						home_three_select, getActivity());
+		}
+
+		if (v == this.home_select_birthday) {
+
+			new MyPopupWindowsBirthDayDate(getActivity(),
+					home_select_birthday, getActivity(),new MyPopupWindowsBirthDayDate.OnSelectListener() {
+
+				@Override
+				public void OnSelect(String result, int type) {
+					// TODO Auto-generated method stub
+					Log.i("aaaa", "回调日期--------type看是阴历还是阳历---------" + result
+							+ "----" + type);
+
+					home_select_birthday.setText(result);
+
+				}
+			});
 		}
 
 	}

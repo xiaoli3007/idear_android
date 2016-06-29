@@ -19,6 +19,7 @@
 	<item type="id" name="home_single_select">false</item>
 	<item type="id" name="home_double_select">false</item>
 	<item type="id" name="home_three_select">false</item>
+	<item type="id" name="home_select_birthday">false</item>
 
 
 

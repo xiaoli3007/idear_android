@@ -42,10 +42,6 @@
             android:name="com.example.activity.ForgetPassword"
             android:launchMode="singleTask" />
 
-        <activity
-            android:name="com.example.activity.PickPhoto"
-            android:launchMode="singleTask" />
-
         <service
             android:name="com.example.services.AutoLoginService"
             android:launchMode="singleTask" />

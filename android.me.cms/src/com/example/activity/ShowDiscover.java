@@ -1,9 +1,6 @@
 package com.example.activity;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-
-import com.example.adapter.ShowDiscoverAdapter;
+import android.widget.*;
 import com.example.utils.Utils;
 
 import com.example.cms.R;
@@ -14,38 +11,42 @@ import android.os.Bundle;
 import android.view.View;
 
 import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.ListView;
-import android.widget.RelativeLayout;
 
 public class ShowDiscover extends Activity implements OnClickListener{
 	private Button buttonBack;
 	private RelativeLayout layoutLoading;
-	private Button buttonCreateOrder;
-	private ListView viewList;
-	private ShowDiscoverAdapter adapterShowDiscoverList;
 	private boolean showLoading = false;
 
+	TextView show_discover_desc_text,show_discover_content_text;
+	private Bundle bundle;
 
-	
 	@Override
 	public void onCreate(Bundle sinha) {
 		super.onCreate(sinha);
 		setContentView(R.layout.show_discover);
-		
+
 		this.buttonBack = (Button) findViewById(R.id.show_discover_title_back_button);
 		this.buttonBack.setOnClickListener(this);
 		this.layoutLoading = (RelativeLayout) findViewById(R.id.loading);
-	
-		 showLoading();
+		this.show_discover_desc_text= (TextView) findViewById(R.id.show_discover_desc_text1);
+		this.show_discover_content_text= (TextView) findViewById(R.id.show_discover_content_text1);
+
+		this.bundle = getIntent().getExtras();
+
+		showLoading();
+
+
 	}
 
 
-
-
 	private void showLoading() {
-		Utils.animView(this.layoutLoading, !this.showLoading);
-		this.showLoading = !this.showLoading;
+//		Utils.animView(this.layoutLoading, !this.showLoading);
+//		this.showLoading = !this.showLoading;
+		if (null != this.bundle )
+		{
+			show_discover_desc_text.setText("sadsadsad");
+			show_discover_content_text.setText("333333333333333");
+		}
 	}
 
 	@Override
@@ -53,6 +54,6 @@ public class ShowDiscover extends Activity implements OnClickListener{
 		if (v == this.buttonBack) {
 			finish();
 		}
-		
+
 	}
 }

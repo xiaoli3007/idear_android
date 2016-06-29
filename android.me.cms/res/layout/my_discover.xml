@@ -5,49 +5,12 @@
     android:layout_height="fill_parent"
     android:background="@color/background_normal" >
 
-    <RadioGroup
-        android:id="@id/my_discover_switch_view"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/my_discover_title_layout"
-        android:layout_marginBottom="5.0dip"
-        android:layout_marginTop="5.0dip"
-        android:orientation="horizontal" >
 
-        <RadioButton
-            android:id="@id/my_discover_switch_tome_text"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="1.0dip"
-            android:layout_weight="1.0"
-            android:background="@drawable/segment_item_left_background"
-            android:button="@null"
-            android:checked="true"
-            android:gravity="center"
-            android:padding="8.0dip"
-            android:text="@string/my_discover_switch_tome_text"
-            android:textColor="@drawable/segment_item_text_color"
-            android:textSize="12.0sp" />
-
-        <RadioButton
-            android:id="@id/my_discover_switch_toother_text"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="1.0dip"
-            android:layout_weight="1.0"
-            android:background="@drawable/segment_item_right_background"
-            android:button="@null"
-            android:gravity="center"
-            android:padding="8.0dip"
-            android:text="@string/my_discover_switch_toother_text"
-            android:textColor="@drawable/segment_item_text_color"
-            android:textSize="12.0sp" />
-    </RadioGroup>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@id/my_discover_switch_view" >
+         >
 
         <ListView
             android:id="@id/my_discover_container"
@@ -105,7 +68,7 @@
             android:ellipsize="middle"
             android:gravity="center"
             android:singleLine="true"
-            android:text="@string/my_discover_title_text"
+            android:text="11111"
             android:textColor="@color/text_title"
             android:textSize="18.0sp" />
 

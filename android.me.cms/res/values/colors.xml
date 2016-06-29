@@ -15,5 +15,6 @@
     <color name="button_normal">#ffe08708</color>
     <color name="button_gray">#ffd1d1d3</color>
     <color name="button_highlight_gray">#ffefefef</color>
+    <color name="color_text_selected">#E38A08</color>
 
 </resources>

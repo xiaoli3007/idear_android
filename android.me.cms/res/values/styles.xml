@@ -8,4 +8,9 @@
         <item name="android:activityCloseExitAnimation">@anim/push_right_out</item>
     </style>
 
+    <style name="SinhaAnimation2">
+        <item name="android:background">@color/button_normal</item>
+
+    </style>
+
 </resources>

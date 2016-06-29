@@ -32,7 +32,6 @@ public class DiscoverAdapter extends BaseAdapter implements OnClickListener {
 		public TextView title;
 		public ProgressBar avatarLoading;
 		public TextView desc;
-		public Button blessit;
 	}
 
 	public DiscoverAdapter(Context context) {
@@ -65,7 +64,6 @@ public class DiscoverAdapter extends BaseAdapter implements OnClickListener {
 			listItem.avatar = (ImageButton) convertView.findViewById(R.id.discover_listitem_avatar_button);
 			listItem.title = (TextView) convertView.findViewById(R.id.discover_listitem_name_text);
 			listItem.desc = (TextView) convertView.findViewById(R.id.discover_listitem_content_text);
-			listItem.blessit = (Button) convertView.findViewById(R.id.discover_listitem_blessit_button);
 			convertView.setOnClickListener(this);
 			convertView.setTag(listItem);
 		} else {
@@ -95,13 +93,18 @@ public class DiscoverAdapter extends BaseAdapter implements OnClickListener {
 		});
 		listItem.title.setText(item.optString("title", "").trim());
 		listItem.desc.setText(item.optString("description", "").trim());
-		listItem.blessit.setOnClickListener(this);
 		return convertView;
 	}
 
 	@Override
 	public void onClick(View v) {
-		Message msg = Cms.discoverHandler.obtainMessage(0, "");
+		int Id = v.getId();
+		int action = 0;
+
+//		if (R.id.discover_listitem_show_detail_button == Id) {
+//			action = 2;
+//		}
+		Message msg = Cms.discoverHandler.obtainMessage(action,v);
 		Cms.discoverHandler.sendMessage(msg);
 	}
 }

@@ -21,8 +21,20 @@ public class Consts {
 	public static final String WEIBO_REDIRECT_URL = "https://api.weibo.com/oauth2/default.html";
 
 	public static final String URI_DOMAIN = "http://192.168.1.102/api/app.php";
+	public static final String URI_DOMAIN2 = "http://192.168.1.102/shangxiang_app";
 
 	public static final String URI_LIST_INFO = URI_DOMAIN + "?act=news_list";
+
+
+	public static final String GET_TEMPLELIST = URI_DOMAIN2
+			+ "/api/app/gettemplelist.php"; // 寺庙列表接口
+	public static final String GET_ORDERLIST = URI_DOMAIN2
+			+ "/api/app/getorderlist.php"; // 发现列表接口
+	public static final String GET_ORDER_DETAIL = URI_DOMAIN2
+			+ "/api/app/getorderinfo.php"; // 发现详情接口
+
+	public static final String GET_addblessingsdo = URI_DOMAIN2
+			+ "/api/app/addblessingsdo.php"; // 发现加持接口
 
 
 	public static final String URI_SEND_VERFY_CODE = URI_DOMAIN + "/api/app/sendsmsdo.php";

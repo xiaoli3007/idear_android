@@ -98,7 +98,7 @@ public class User extends BaseFragment {
 			});
 		}
 		if (v == this.buttonMenuAvatar) {
-			goActivity(PickPhoto.class);
+			//goActivity(PickPhoto.class);
 		}
 		if (v == this.buttonMenuMobile) {
 		}
@@ -106,7 +106,7 @@ public class User extends BaseFragment {
 			if (!TextUtils.isEmpty(Cms.APP.getMobile())) {
 				goFragment(new ResetPassword());
 			} else {
-				Utils.Dialog(getActivity(), getString(R.string.dialog_reset_password_tip), getString(R.string.dialog_reset_password_other));
+			//	Utils.Dialog(getActivity(), getString(R.string.dialog_reset_password_tip), getString(R.string.dialog_reset_password_other));
 			}
 		}
 		if (v == this.buttonMenuRealname || v == this.buttonMenuRegion || v == this.buttonMenuSex) {
