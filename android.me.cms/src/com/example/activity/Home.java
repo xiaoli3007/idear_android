@@ -1,7 +1,10 @@
 package com.example.activity;
 
+import android.support.v4.view.PagerAdapter;
 import android.util.Log;
 
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.cms.BaseFragment;
@@ -18,14 +21,21 @@ import com.example.popupwindow.MyPopupWindowsDate;
 import com.example.popupwindow.MyPopupWindowsHomeSelectSingle;
 import com.example.utils.JsonString;
 import com.example.utils.Utils;
+import com.example.widget.MyViewPager;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.List;
 
 
 public class Home extends BaseFragment {
 
 	private TextView home_single_select,home_double_select,home_three_select,home_select_birthday;
+
+	private MyViewPager home_slide;
+
+	private LinearLayout home_slide_group;
 	//private  JSONArray home_single_select_data;
 	@SuppressLint("InflateParams")
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle sinha) {
@@ -41,6 +51,8 @@ public class Home extends BaseFragment {
 			this.home_three_select.setOnClickListener(this);
 			this.home_select_birthday.setOnClickListener(this);
 
+			this.home_slide=(MyViewPager) view.findViewById(R.id.home_slide);
+			this.home_slide_group=(LinearLayout) view.findViewById(R.id.home_slide_group);
 		return view;
 	}
 
@@ -48,6 +60,8 @@ public class Home extends BaseFragment {
 		super.onActivityCreated(sinha);
 
 	}
+
+
 
 	@Override
 	public void onClick(View v) {

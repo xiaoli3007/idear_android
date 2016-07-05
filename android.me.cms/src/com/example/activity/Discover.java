@@ -50,6 +50,7 @@ public class Discover extends BaseFragment implements XListView.IXListViewListen
 	private SinhaPipeClient httpClient;
 	private SinhaPipeMethod httpMethod;
 	private ProgressDialog pDialog = null;
+	private  Toast  nomore=null;
 	private Handler mHandler;
 
 	@SuppressLint("InflateParams")
@@ -114,7 +115,7 @@ public class Discover extends BaseFragment implements XListView.IXListViewListen
 				if(daochang_data!=null){
 					new MyPopupWindows(getActivity(),v,getActivity(),daochang_data);
 				}else{
-					get_daochang_list(null, Consts.GET_TEMPLELIST, getActivity(),v);
+					get_daochang_list(null, "", getActivity(),v);
 				}
 
 
@@ -180,7 +181,7 @@ public class Discover extends BaseFragment implements XListView.IXListViewListen
 		mListView.setPullLoadEnable(true);
 		mListView.setAdapter(mAdapter);
 		//mListView.setPullLoadEnable_no_view(true);
-		listAdapter(Consts.GET_ORDERLIST + "?p=" + page + "&&pz="
+		listAdapter(Consts.WEIBO_REDIRECT_URL + "?p=" + page + "&&pz="
 				+ pagesize + "&&tid=" + tid+ "&&mid=" + mid, 1,false); // 默认加载第一页
 	}
 
@@ -202,11 +203,11 @@ public class Discover extends BaseFragment implements XListView.IXListViewListen
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
-				listAdapter( Consts.GET_ORDERLIST + "?p=" + 1 + "&&pz="
+				listAdapter( Consts.WEIBO_REDIRECT_URL + "?p=" + 1 + "&&pz="
 						+ pagesize + "&&tid=" + tid+ "&&mid=" + mid,0,true); // 加载
 				onLoad();
 			}
-		}, 2000);
+		}, 1000);
 
 	}
 
@@ -219,18 +220,18 @@ public class Discover extends BaseFragment implements XListView.IXListViewListen
 
 				if (isBottom) {
 
-					Utils.ShowToast(getActivity(), "没有更多了");
+					shownomoreLoading();
 
 				}else{
 					page++;
-					listAdapter( Consts.GET_ORDERLIST + "?p=" + page + "&&pz="
+					listAdapter( Consts.WEIBO_REDIRECT_URL + "?p=" + page + "&&pz="
 							+ pagesize + "&&tid=" + tid+ "&&mid=" + mid,0,false); // 加载
 					onLoad();
 				}
 
 
 			}
-		}, 2000);
+		}, 500);
 	}
 
 	private void listAdapter( String url ,final int first,final boolean is_refersh_or_load) {
@@ -250,7 +251,8 @@ public class Discover extends BaseFragment implements XListView.IXListViewListen
 			isBottom = true;
 			mListView.setPullLoadEnable(false);
 			//mListView.setPullLoadEnable_no_view(false);
-			Utils.ShowToast(getActivity(), "没有更多了");
+		//	Utils.ShowToast(getActivity(), "没有更多了");
+			shownomoreLoading();
 		}else{
 			if(first>0){
 				showLoading();
@@ -337,6 +339,19 @@ public class Discover extends BaseFragment implements XListView.IXListViewListen
 			pDialog = new ProgressDialog(getActivity());
 			pDialog.setMessage("数据加载中。。。");
 			pDialog.show();
+		}
+
+	}
+
+
+	private void shownomoreLoading() {
+
+		if(nomore!=null){
+			nomore.cancel();
+			nomore=null;
+		}else{
+			nomore =Toast.makeText(getActivity(), "没有更多了！", Toast.LENGTH_LONG);
+			nomore.show();
 		}
 
 	}
@@ -428,13 +443,7 @@ public class Discover extends BaseFragment implements XListView.IXListViewListen
 
 
 
-	@Override
-	public void onClick(View v) {
-//		if (v == this.buttonShowTempleList) {
-//			this.layoutTempleList.setVisibility(!this.showTempleList ? View.VISIBLE : View.GONE);
-//			this.showTempleList = !this.showTempleList;
-//		}
-	}
+
 
 
 }

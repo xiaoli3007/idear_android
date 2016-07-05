@@ -13,4 +13,10 @@
 
     </style>
 
+
+    <style  name="TextViewStyle1">
+
+        <item name="android:background">#ffff00ff</item>
+    </style>
+
 </resources>

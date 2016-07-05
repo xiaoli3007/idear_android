@@ -166,6 +166,47 @@
                 android:id="@+id/button"
                 android:layout_marginTop="25dp"/>
 
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_normal" />
+
+
+
+
+        <FrameLayout
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent" >
+            <com.example.widget.MyViewPager
+                    android:id="@+id/home_slide"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    >
+
+            </com.example.widget.MyViewPager>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                <LinearLayout
+                        android:id="@+id/home_slide_group"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="30dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+
+
+
+
+
+
     </LinearLayout>
 
 

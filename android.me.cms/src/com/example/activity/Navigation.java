@@ -78,7 +78,7 @@ public class Navigation extends FragmentActivity implements OnCheckedChangeListe
 	public boolean dispatchKeyEvent(KeyEvent event) {
 		if (event.getAction() == KeyEvent.ACTION_DOWN && event.getKeyCode() == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
 			Class<?> location = Cms.classCurr;
-			if (null == location || location == Home.class || location == LunarCalendar.class || location == My.class || location == Message.class) {
+			if (null == location || location == Home.class || location == Discover.class  || location == LunarCalendar.class || location == My.class || location == Message.class) {
 				Utils.Dialog(Navigation.this, getString(R.string.dialog_exit_tip), getString(R.string.dialog_exit_content), new Utils.Callback() {
 					@Override
 					public void callFinished() {

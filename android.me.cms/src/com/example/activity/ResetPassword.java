@@ -56,7 +56,7 @@ public class ResetPassword extends BaseFragment implements OnTouchListener {
 		this.inputRenewPassword = (EditText) view.findViewById(R.id.reset_password_renew_password_input);
 		this.buttonSubmit = (Button) view.findViewById(R.id.reset_password_submit_button);
 		this.buttonSubmit.setOnClickListener(this);
-		
+
 		return view;
 	}
 
@@ -66,39 +66,39 @@ public class ResetPassword extends BaseFragment implements OnTouchListener {
 	}
 
 	private void submitResetPassword() {
-		if (Utils.CheckNetwork()) {
-			if (checkResetPassword()) {
-				this.isSubmiting = true;
-				showLoading();
-
-				List<NameValuePair> params = new ArrayList<NameValuePair>();
-				params.add(new BasicNameValuePair("mobile", Cms.APP.getMobile()));
-				params.add(new BasicNameValuePair("password", this.inputNewPassword.getText().toString()));
-
-				this.httpClient.Config("post", Consts.URI_RESET_PASSWORD, params, true);
-				this.httpMethod = new SinhaPipeMethod(this.httpClient, new SinhaPipeMethod.MethodCallback() {
-					public void CallFinished(String error, Object result) {
-						showLoading();
-						isSubmiting = false;
-						if (null == error) {
-							submitResetPassword((String) result);
-						} else {
-							int err = R.string.dialog_system_error_content;
-							if (error == httpClient.ERR_TIME_OUT) {
-								err = R.string.dialog_network_error_timeout;
-							}
-							if (error == httpClient.ERR_GET_ERR) {
-								err = R.string.dialog_network_error_getdata;
-							}
-							Utils.ShowToast(getActivity(), err);
-						}
-					}
-				});
-				this.httpMethod.start();
-			}
-		} else {
-			Utils.ShowToast(getActivity(), R.string.dialog_network_check_content);
-		}
+//		if (Utils.CheckNetwork()) {
+//			if (checkResetPassword()) {
+//				this.isSubmiting = true;
+//				showLoading();
+//
+//				List<NameValuePair> params = new ArrayList<NameValuePair>();
+//				params.add(new BasicNameValuePair("mobile", Cms.APP.getMobile()));
+//				params.add(new BasicNameValuePair("password", this.inputNewPassword.getText().toString()));
+//
+//				this.httpClient.Config("post", Consts.URI_RESET_PASSWORD, params, true);
+//				this.httpMethod = new SinhaPipeMethod(this.httpClient, new SinhaPipeMethod.MethodCallback() {
+//					public void CallFinished(String error, Object result) {
+//						showLoading();
+//						isSubmiting = false;
+//						if (null == error) {
+//							submitResetPassword((String) result);
+//						} else {
+//							int err = R.string.dialog_system_error_content;
+//							if (error == httpClient.ERR_TIME_OUT) {
+//								err = R.string.dialog_network_error_timeout;
+//							}
+//							if (error == httpClient.ERR_GET_ERR) {
+//								err = R.string.dialog_network_error_getdata;
+//							}
+//							Utils.ShowToast(getActivity(), err);
+//						}
+//					}
+//				});
+//				this.httpMethod.start();
+//			}
+//		} else {
+//			Utils.ShowToast(getActivity(), R.string.dialog_network_check_content);
+//		}
 	}
 
 	private void submitResetPassword(String s) {

@@ -89,25 +89,25 @@
             android:layout_height="wrap_content"
             android:layout_margin="20.0dip"
             android:orientation="vertical"
-           
+
              >
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal" >
-				
+
                     <GridView
 				        android:id="@+id/gridView1"
 				        android:layout_width="wrap_content"
 				        android:layout_height="wrap_content"
 				        android:numColumns="4"
 				        android:columnWidth="60.0dip"
-				        android:scrollbars="none" 
+				        android:scrollbars="none"
 				        android:horizontalSpacing="5dip"
 				        android:cacheColorHint="@android:color/transparent" >
 				    </GridView>
-                
+
             </LinearLayout>
 
             <LinearLayout
@@ -171,7 +171,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20.0dip"
             android:orientation="vertical"
-             android:visibility="gone" 
+             android:visibility="gone"
             >
 
             <LinearLayout

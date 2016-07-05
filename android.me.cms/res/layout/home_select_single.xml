@@ -54,12 +54,12 @@
             android:id="@+id/orderform_incense_view"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            app:selectionDivider="@color/line_normal"
+            app:selectionDivider="@drawable/divider_dark_gradient_horizontal"
             app:selectionDividerActiveAlpha="100"
             app:selectionDividerDimmedAlpha="255"
             app:selectionDividerHeight="1.0dip"
             app:visibleItems="5"
-            app:abstractWheelViewStyle="@color/background_navbar"
+            app:abstractWheelViewStyle="@style/TextViewStyle1"
                 />
     </LinearLayout>
 

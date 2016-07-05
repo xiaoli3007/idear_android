@@ -214,39 +214,39 @@ public class ModifyInfo extends BaseFragment {
 	}
 
 	private void submitModifyInfo() {
-		if (Utils.CheckNetwork()) {
-			this.isSubmiting = true;
-			showLoading();
-
-			List<NameValuePair> params = new ArrayList<NameValuePair>();
-			params.add(new BasicNameValuePair("mid", Cms.APP.getMemberId()));
-			params.add(new BasicNameValuePair("truename", this.inputRealname.getText().toString()));
-			params.add(new BasicNameValuePair("area", this.inputRegion.getText().toString()));
-			params.add(new BasicNameValuePair("sex", String.valueOf(this.sex)));
-
-			this.httpClient.Config("post", Consts.URI_MODIFY_MEMBERINFO, params, true);
-			this.httpMethod = new SinhaPipeMethod(this.httpClient, new SinhaPipeMethod.MethodCallback() {
-				public void CallFinished(String error, Object result) {
-					showLoading();
-					isSubmiting = false;
-					if (null == error) {
-						submitModifyInfo((String) result);
-					} else {
-						int err = R.string.dialog_system_error_content;
-						if (error == httpClient.ERR_TIME_OUT) {
-							err = R.string.dialog_network_error_timeout;
-						}
-						if (error == httpClient.ERR_GET_ERR) {
-							err = R.string.dialog_network_error_getdata;
-						}
-						Utils.ShowToast(getActivity(), err);
-					}
-				}
-			});
-			this.httpMethod.start();
-		} else {
-			Utils.ShowToast(getActivity(), R.string.dialog_network_check_content);
-		}
+//		if (Utils.CheckNetwork()) {
+//			this.isSubmiting = true;
+//			showLoading();
+//
+//			List<NameValuePair> params = new ArrayList<NameValuePair>();
+//			params.add(new BasicNameValuePair("mid", Cms.APP.getMemberId()));
+//			params.add(new BasicNameValuePair("truename", this.inputRealname.getText().toString()));
+//			params.add(new BasicNameValuePair("area", this.inputRegion.getText().toString()));
+//			params.add(new BasicNameValuePair("sex", String.valueOf(this.sex)));
+//
+//			this.httpClient.Config("post", Consts.URI_MODIFY_MEMBERINFO, params, true);
+//			this.httpMethod = new SinhaPipeMethod(this.httpClient, new SinhaPipeMethod.MethodCallback() {
+//				public void CallFinished(String error, Object result) {
+//					showLoading();
+//					isSubmiting = false;
+//					if (null == error) {
+//						submitModifyInfo((String) result);
+//					} else {
+//						int err = R.string.dialog_system_error_content;
+//						if (error == httpClient.ERR_TIME_OUT) {
+//							err = R.string.dialog_network_error_timeout;
+//						}
+//						if (error == httpClient.ERR_GET_ERR) {
+//							err = R.string.dialog_network_error_getdata;
+//						}
+//						Utils.ShowToast(getActivity(), err);
+//					}
+//				}
+//			});
+//			this.httpMethod.start();
+//		} else {
+//			Utils.ShowToast(getActivity(), R.string.dialog_network_check_content);
+//		}
 	}
 
 	private void submitModifyInfo(String s) {

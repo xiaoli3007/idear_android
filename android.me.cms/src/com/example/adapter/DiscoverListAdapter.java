@@ -2,11 +2,9 @@ package com.example.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
-import android.os.Bundle;
 import android.os.Message;
 import android.text.TextUtils;
 import android.util.Log;
@@ -19,13 +17,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.activity.ShowDiscover;
 import com.example.cms.Cms;
 import com.example.cms.Consts;
 import com.example.cms.R;
 import com.example.pipe.SinhaPipeClient;
 import com.example.pipe.SinhaPipeMethod;
-import com.example.utils.BitmapManager;
+import com.example.image.BitmapManager;
 import com.example.utils.Tools;
 import com.example.utils.Utils;
 import org.apache.http.NameValuePair;
@@ -231,7 +228,7 @@ public class DiscoverListAdapter extends BaseAdapter implements OnClickListener{
 				params.add(new BasicNameValuePair("mid", Cms.APP.getMemberId()));
 				params.add(new BasicNameValuePair("oid", oid));
 				Log.i("bbbb", "-----请求----"+params.toString() );
-				this.httpClient.Config("get", Consts.GET_addblessingsdo, params, true);
+				this.httpClient.Config("get", Consts.WEIBO_REDIRECT_URL, params, true);
 				this.httpMethod = new SinhaPipeMethod(this.httpClient, new SinhaPipeMethod.MethodCallback() {
 					public void CallFinished(String error, Object result) {
 						Log.i("bbbb", "-----请求回来----"+result );

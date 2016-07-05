@@ -28,17 +28,7 @@ public class MyActivity extends Activity {
 
         title ="测试";
         url="file:///android_asset/www/index.html";
-//        btnOpen = (Button) findViewById(R.id.btnOpen);
-//        btnOpen.setOnClickListener(new Button.OnClickListener(){//创建监听
-//            public void onClick(View v) {
-//                Intent mIntent = new Intent();
-//                mIntent.setClass(MyActivity.this, UrlWebActivity.class);
-//                mIntent.putExtra("url", "file:///android_asset/www/index.html");
-//                mIntent.putExtra("title", "测试");
-//                startActivity(mIntent);
-//            }
-//
-//        });
+
 
         initView();
     }

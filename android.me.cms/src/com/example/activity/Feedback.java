@@ -58,39 +58,39 @@ public class Feedback extends BaseFragment {
 	}
 
 	private void submitFeedback() {
-		if (Utils.CheckNetwork()) {
-			if (checkFeedback()) {
-				this.isSubmiting = true;
-				showLoading();
-
-				List<NameValuePair> params = new ArrayList<NameValuePair>();
-				params.add(new BasicNameValuePair("mid", Cms.memberInfo.optString("memberid", "")));
-				params.add(new BasicNameValuePair("content", this.textFeedback.getText().toString()));
-
-				this.httpClient.Config("post", Consts.URI_FEEDBACK, params, true);
-				this.httpMethod = new SinhaPipeMethod(this.httpClient, new SinhaPipeMethod.MethodCallback() {
-					public void CallFinished(String error, Object result) {
-						showLoading();
-						isSubmiting = false;
-						if (null == error) {
-							submitFeedback((String) result);
-						} else {
-							int err = R.string.dialog_system_error_content;
-							if (error == httpClient.ERR_TIME_OUT) {
-								err = R.string.dialog_network_error_timeout;
-							}
-							if (error == httpClient.ERR_GET_ERR) {
-								err = R.string.dialog_network_error_getdata;
-							}
-							Utils.ShowToast(getActivity(), err);
-						}
-					}
-				});
-				this.httpMethod.start();
-			}
-		} else {
-			Utils.ShowToast(getActivity(), R.string.dialog_network_check_content);
-		}
+//		if (Utils.CheckNetwork()) {
+//			if (checkFeedback()) {
+//				this.isSubmiting = true;
+//				showLoading();
+//
+//				List<NameValuePair> params = new ArrayList<NameValuePair>();
+//				params.add(new BasicNameValuePair("mid", Cms.memberInfo.optString("memberid", "")));
+//				params.add(new BasicNameValuePair("content", this.textFeedback.getText().toString()));
+//
+//				this.httpClient.Config("post", Consts.URI_FEEDBACK, params, true);
+//				this.httpMethod = new SinhaPipeMethod(this.httpClient, new SinhaPipeMethod.MethodCallback() {
+//					public void CallFinished(String error, Object result) {
+//						showLoading();
+//						isSubmiting = false;
+//						if (null == error) {
+//							submitFeedback((String) result);
+//						} else {
+//							int err = R.string.dialog_system_error_content;
+//							if (error == httpClient.ERR_TIME_OUT) {
+//								err = R.string.dialog_network_error_timeout;
+//							}
+//							if (error == httpClient.ERR_GET_ERR) {
+//								err = R.string.dialog_network_error_getdata;
+//							}
+//							Utils.ShowToast(getActivity(), err);
+//						}
+//					}
+//				});
+//				this.httpMethod.start();
+//			}
+//		} else {
+//			Utils.ShowToast(getActivity(), R.string.dialog_network_check_content);
+//		}
 	}
 
 	private void submitFeedback(String s) {

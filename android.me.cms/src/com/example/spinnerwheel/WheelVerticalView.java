@@ -222,7 +222,7 @@ public class WheelVerticalView extends AbstractWheelView {
                 MeasureSpec.makeMeasureSpec(getWidth() - 2 * mItemsPadding, MeasureSpec.EXACTLY),
                 MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED)
         );
-        
+
     }
 
 

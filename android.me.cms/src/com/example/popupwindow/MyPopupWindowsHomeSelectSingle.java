@@ -57,7 +57,7 @@ public class MyPopupWindowsHomeSelectSingle extends PopupWindow {
 		JSCSelect.setViewAdapter(JSCAdapter);
 		JSCSelect.setCurrentItem(0);
 		JSCSelect.setCyclic(false);
-	//	JSCAdapter.getItem(JSCSelect.getCurrentItem(),null);
+	//	JSCAdapter.getItem(JSCSelect.getCurrentItem(),customView,null);
 
 		popupwindow = new PopupWindow(customView);
 		 //以下为弹窗后面的背景色设置
