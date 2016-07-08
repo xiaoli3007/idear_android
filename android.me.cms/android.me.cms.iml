@@ -26,16 +26,7 @@
     <orderEntry type="jdk" jdkName="Android API 18 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/android-support-v4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
+      <library name="httpmime-4.1.3.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/libs/httpmime-4.1.3.jar!/" />
         </CLASSES>
@@ -44,7 +35,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
-      <library>
+      <library name="nineoldandroids-2.2.0.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/libs/nineoldandroids-2.2.0.jar!/" />
         </CLASSES>
@@ -53,9 +44,18 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
-      <library>
+      <library name="universal-image-loader-1.9.3.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/libs/universal-image-loader-1.9.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/android-support-v4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

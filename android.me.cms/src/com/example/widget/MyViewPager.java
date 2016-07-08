@@ -3,6 +3,7 @@ package com.example.widget;
 import android.content.Context;
 import android.graphics.PointF;
 import android.support.v4.view.ViewPager;
+import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 
@@ -18,7 +19,14 @@ public class MyViewPager extends ViewPager {
     PointF curP = new PointF();
     OnSingleTouchListener onSingleTouchListener;
     public MyViewPager(Context context) {
+
+
         super(context);
+        Log.i(TAG, "======我在这里");
+    }
+
+    public MyViewPager(Context context, AttributeSet attrs) {
+        super(context, attrs);
     }
 
     @Override

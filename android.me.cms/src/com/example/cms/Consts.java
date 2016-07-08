@@ -20,7 +20,7 @@ public class Consts {
 	public static final String WEIBO_SCOPE = "";
 	public static final String WEIBO_REDIRECT_URL = "https://api.weibo.com/oauth2/default.html";
 
-	public static final String URI_DOMAIN = "http://192.168.1.102/api/app.php";
+	public static final String URI_DOMAIN = "http://192.168.1.102/cms/api/app.php/";
 
 	public static final String URI_LIST_INFO = URI_DOMAIN + "?act=news_list";
 
